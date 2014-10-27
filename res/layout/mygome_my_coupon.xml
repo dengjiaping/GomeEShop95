@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        android:layout_width="match_parent"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/mygome_mycoupon_select_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/common_top_layout"
+        android:background="@drawable/mycoupon_bar_up"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_red"
+            style="@style/my_coupon_type_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:text="@string/mygome_coupon_red" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_blue"
+            style="@style/my_coupon_type_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:text="@string/mygome_coupon_blue" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_shop"
+            style="@style/my_coupon_type_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:text="@string/mygome_coupon_shop" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_brand"
+            style="@style/my_coupon_type_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tap_no_lines"
+            android:text="@string/mygome_coupon_brand" >
+        </TextView>
+    </LinearLayout>
+
+    <!--
+    <ListView
+        android:id="@+id/mygome_mycoupon_listView1"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/mygome_activate_coupon_rl"
+        android:layout_below="@+id/mygome_mycoupon_select_ll"
+        android:background="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:fadingEdge="none" >
+    </ListView>
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mygome_mycoupon_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/mygome_activate_coupon_rl"
+        android:layout_below="@+id/mygome_mycoupon_select_ll" />
+
+    <RelativeLayout
+        android:id="@+id/mygome_activate_coupon_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_goem_all_coupon_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip" >
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_num"
+            style="@style/product_list_group_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="共10张未使用优惠券"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mygome_mycoupon_rule_selector"
+            android:drawablePadding="5dip" />
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_activate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mygome_mycoupon_rule"
+            android:background="@drawable/mygome_mycoupon_activate_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

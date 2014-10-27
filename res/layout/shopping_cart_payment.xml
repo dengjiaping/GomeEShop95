@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/payment_relative_online"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/more_item_first_bg_selector"
+                android:padding="5dip" >
+
+                <RadioButton
+                    android:id="@+id/shopping_online_radiobutton"
+                    style="@style/radiogroup_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/radio_button_bg_selector" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_payment_onlinepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_online_radiobutton"
+                    android:text="@string/shopping_goods_order_payment_onlinepay"
+                    android:textColor="@color/main_default_black_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:paddingBottom="10dip" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_payment_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/shopping_goods_order_payment_support"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <ImageView
+                    android:layout_width="284dip"
+                    android:layout_height="32dip"
+                    android:layout_alignLeft="@id/shopping_goods_order_payment_support"
+                    android:layout_below="@id/shopping_goods_order_payment_support"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/onlinepayment" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_relative_cash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/more_item_first_bg_selector"
+                android:padding="5dip" >
+
+                <RadioButton
+                    android:id="@+id/shopping_cash_radiobutton"
+                    style="@style/radiogroup_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/radio_button_bg_selector" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_payment_cashpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_cash_radiobutton"
+                    android:text="@string/shopping_goods_order_payment_cashpayment"
+                    android:textColor="@color/main_default_black_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pos_relaitve"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_middle_bg_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_payment_pos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="POS"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <ImageView
+                    android:id="@+id/pos_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/common_check_mark"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cash_relaitve"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_payment_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/shopping_goods_order_payment_cash"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <ImageView
+                    android:id="@+id/cash_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/common_check_mark"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

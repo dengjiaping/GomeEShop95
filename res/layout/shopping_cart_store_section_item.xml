@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gomeshoptitlelinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/good_shop_name_top_background" >
+
+        <TextView
+            android:id="@+id/gomeshop_store_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/main_default_black_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gomeshopgoodslinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gomeshoptitlelinearlayout"
+        android:layout_marginBottom="5dip"
+        android:background="@drawable/more_item_last_bg_selector"
+        android:orientation="vertical"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip" >
+
+        <com.gome.ecmall.custom.DisScrollListView
+            android:id="@+id/shopping_cart_store_goods_list"
+            style="@style/more_section_listview_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line"
+            android:dividerHeight="0dip"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false" />
+
+        <RelativeLayout
+            android:id="@+id/gome_coupon_goodslinearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/store_coupon_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="10dip"
+                android:text="@string/shopping_cart_use_coupon"
+                android:textColor="@color/main_default_black_text_color" />
+
+            <Button
+                android:id="@+id/gome_coupon_select_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_below="@+id/image"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/store_coupon_info_tv"
+                android:background="@drawable/gwc_form_click_bt_selector"
+                android:gravity="center"
+                android:text="@string/shopping_cart_shop_not_select" />
+
+            <TextView
+                android:id="@+id/gome_coupon_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gome_coupon_select_btn"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/store_coupon_info_tv"
+                android:visibility="gone"
+                android:textColor="@color/main_default_black_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_zen_goodslinearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/store_zen_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="10dip"
+                android:text="@string/shopping_cart_order_prom"
+                android:textColor="@color/main_default_black_text_color" />
+
+            <Button
+                android:id="@+id/shop_prefer_select_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/store_zen_info_tv"
+                android:background="@drawable/gwc_form_click_bt_selector"
+                android:gravity="center"
+                android:text="@string/shopping_cart_shop_prom_null_select" />
+
+            <LinearLayout
+                android:id="@+id/zen_goodslinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_prefer_select_btn"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/store_zen_info_tv"
+                android:orientation="vertical"
+                android:singleLine="true" 
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gome_total_price_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/black_line" />
+
+            <TextView
+                android:id="@+id/shopping_cart_subtotal_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginTop="10dip"
+                android:paddingLeft="10dip"
+                android:text="@string/shopping_cart_subtotal"
+                android:textColor="@color/main_default_black_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_cart_subtotal_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@+id/shopping_cart_subtotal_tv"
+                android:text="￥0"
+                android:textColor="@color/price_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

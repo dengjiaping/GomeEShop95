@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg03"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopping_goods_totalnumber"
+                android:textColor="@color/main_default_black_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_number_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="0"
+                android:textColor="@color/price_text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopping_goods_totalprice_top"
+                android:textColor="@color/main_default_black_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_totalprice_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="￥0.00"
+                android:textColor="@color/price_text_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/null_goods_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/outstocktitlelinearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comment_gray_item_top_bg" >
+
+                    <TextView
+                        android:id="@+id/outofstocktext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="6dip"
+                        android:layout_marginRight="6dip"
+                        android:layout_marginTop="10dip"
+                        android:text="@string/shopping_cart_null_goods_first"
+                        android:textColor="@color/main_default_black_text_color" />
+                </LinearLayout>
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/shopping_cart_null_section_lv_first"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:dividerHeight="0dip"
+                    android:footerDividersEnabled="false" />
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/shopping_null_cart_section_lv_second"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:dividerHeight="0dip"
+                    android:footerDividersEnabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gomeshoptitlelinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/good_shop_name_top_background"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gomeshop_title_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/main_default_black_text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gomeshopgoodslinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:orientation="vertical"
+                android:paddingLeft="11dip"
+                android:paddingRight="11dip"
+                android:visibility="gone" >
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/shopping_cart_section_lv_first"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/cart_line"
+                    android:dividerHeight="0dip"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false" />
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/shopping_cart_section_lv_second"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dip"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/gome_coupon_goodslinearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip" >
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cart_line" />
+
+                    <TextView
+                        android:id="@+id/store_coupon_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_marginTop="10dip"
+                        android:paddingLeft="10dip"
+                        android:text="@string/shopping_cart_use_coupon"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <Button
+                        android:id="@+id/gome_coupon_select_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@+id/store_coupon_info_tv"
+                        android:background="@drawable/gwc_form_click_bt_selector"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/shopping_cart_blue_not_select" />
+
+                    <TextView
+                        android:id="@+id/gome_coupon_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gome_coupon_select_btn"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toRightOf="@+id/store_coupon_info_tv"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gome_brand_goodslinearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip" >
+
+                    <ImageView
+                        android:id="@+id/store_brand_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cart_line"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/store_brand_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:paddingLeft="10dip"
+                        android:text="@string/shopping_cart_use_coupon"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/gome_brand_select_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@+id/store_brand_info_tv"
+                        android:background="@drawable/gwc_form_click_bt_selector"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/shopping_cart_brand_not_select" />
+
+                    <LinearLayout
+                        android:id="@+id/brand_coupon_goodslinearlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gome_brand_select_btn"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_toRightOf="@+id/store_brand_info_tv"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/store_zen_goodslinearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/cart_line" />
+
+                    <TextView
+                        android:id="@+id/store_zen_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView1"
+                        android:layout_marginTop="10dip"
+                        android:paddingLeft="10dip"
+                        android:text="@string/shopping_cart_order_prom"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <LinearLayout
+                        android:id="@+id/zen_goodslinearlayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView1"
+                        android:layout_marginTop="10dip"
+                        android:layout_toRightOf="@+id/store_zen_info_tv"
+                        android:orientation="vertical"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gome_total_price_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/black_line" />
+
+                    <TextView
+                        android:id="@+id/shopping_cart_subtotal_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_marginTop="10dip"
+                        android:paddingLeft="10dip"
+                        android:text="@string/shopping_cart_subtotal"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/shopping_cart_subtotal_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/shopping_cart_subtotal_tv"
+                        android:text="￥0"
+                        android:textColor="@color/price_text_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.gome.ecmall.custom.DisScrollListView
+                android:id="@+id/shopping_cart_store_list"
+                style="@style/more_section_listview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:dividerHeight="0dip"
+                android:paddingBottom="5dip" />
+
+            <LinearLayout
+                android:id="@+id/prom_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_first_bg_selector"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="@string/shopping_order_prom"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <LinearLayout
+                    android:id="@+id/shopping_cart_section_prom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_last_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay_method_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dip"
+                android:background="@drawable/more_item_single_bg_selector"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_pay_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/shopping_goods_use_red_coupon"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <ImageView
+                    android:id="@+id/img_shopping_iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:background="@drawable/common_right_arrow_bg_selector" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_use_coupon_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/shopping_goods_pay_method"
+                    android:singleLine="true"
+                    android:textColor="@color/hint_text_color" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shopping_goods_use_coupon_intr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dip"
+                android:layout_marginRight="26dip"
+                android:text="@string/shopping_goods_red_ticket_hint"
+                android:textColor="#FFBB5C"
+                android:textSize="12dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/shopcart_total_payment_bg"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/shopping_goods_totalnumber"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/goodstotalnumber_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="0"
+                        android:textColor="@color/main_default_black_text_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/shopping_goods_total_goods_price"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/shopping_goods_order_goods_price_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.00"
+                        android:textColor="@color/main_default_black_text_color" />
+                </RelativeLayout>
+                <!-- 订单优惠 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/sub_order_order_discount"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@+id/shopping_goods_order_goods_discount_data"
+                        android:text="-"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/shopping_goods_order_goods_discount_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.00"
+                        android:textColor="@color/main_default_black_text_color" />
+                </RelativeLayout>
+                <!-- 优惠券 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/shopping_goods_order_redtickets_shoppingcar"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@+id/shopping_goods_order_coupon_data"
+                        android:text="-"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/shopping_goods_order_coupon_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.00"
+                        android:textColor="@color/main_default_black_text_color" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/shopping_goods_totalprice"
+                        android:textColor="@color/main_default_black_text_color" />
+
+                    <TextView
+                        android:id="@+id/goodstotalprice_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.00"
+                        android:textColor="@color/price_text_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shopping_cart_settle_accounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/common_orange_btn"
+                android:paddingBottom="10dip"
+                android:paddingLeft="40dip"
+                android:paddingRight="40dip"
+                android:paddingTop="10dip"
+                android:text="@string/shopping_cart_settle_accounts"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffdddddd"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dip"
+        android:text="输入密码" />
+
+    <com.bangcle.safekeyboard.PasswordEditText
+        android:id="@+id/text_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:hint="6-12位字符组成"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/button_get_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="获取密码" />
+
+</LinearLayout>

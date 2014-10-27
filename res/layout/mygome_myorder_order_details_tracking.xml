@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mygome_myorder_order_details_tracking_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <!--
+         <com.gome.ecmall.custom.DisScrollListView
+        android:id="@+id/mygome_order_details_tracking_order_status_list"
+        style="@style/more_section_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dip"
+        android:background="@android:color/transparent"
+        android:divider="@color/weak_text_color"
+        android:dividerHeight="0.5dip"
+        android:listSelector="@android:color/transparent" />
+    -->
+
+</LinearLayout>

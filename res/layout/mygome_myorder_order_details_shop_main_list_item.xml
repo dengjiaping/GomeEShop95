@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_order_shop_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/good_shop_name_middle_background" >
+
+        <TextView
+            android:id="@+id/textview_id"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_open_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/category_arrow_down" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@id/iv_open_close"
+            android:background="@color/common_round_line_color" />
+    </RelativeLayout>
+
+    <com.gome.ecmall.custom.DisScrollListView
+        android:id="@+id/mygome_myorder_order_details_main_suite_list"
+        style="@style/more_section_listview_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:divider="@drawable/line" />
+
+    <include
+        android:id="@+id/mygmeview"
+        layout="@layout/mygome_myorder_order_details_shop_goods_list_footview" />
+
+</LinearLayout>

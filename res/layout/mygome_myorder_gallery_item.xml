@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <ImageView
+        android:id="@+id/mygome_myorder_gallery_item_imageView1"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="@drawable/product_list_grid_item_icon_bg"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="1dp" />
+
+</LinearLayout>

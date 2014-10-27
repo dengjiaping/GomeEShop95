@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pay_method_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_item_first_bg_selector"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/shopping_goods_pay_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:text="国美在线1件"
+            android:textColor="@color/main_default_black_text_color" />
+
+        <ImageView
+            android:id="@+id/img_shopping_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/common_right_arrow_bg_selector" />
+    </RelativeLayout>
+
+    <!-- 普通商品 -->
+
+    <com.gome.ecmall.custom.DisScrollListView
+        android:id="@+id/shopping_cart_section_lv_first"
+        style="@style/more_section_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dip"
+        android:footerDividersEnabled="false"
+        android:visibility="gone" />
+    <!-- 套购商品 -->
+
+    <com.gome.ecmall.custom.DisScrollListView
+        android:id="@+id/shopping_cart_section_lv_second"
+        style="@style/more_section_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="-2dip"
+        android:dividerHeight="0dip"
+        android:footerDividersEnabled="false"
+        android:visibility="gone" />
+
+    <!-- 订单优惠begin -->
+
+    <LinearLayout
+        android:id="@+id/prom_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_item_first_bg_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/shopping_order_prom"
+            android:textColor="@color/main_default_black_text_color" />
+
+        <LinearLayout
+            android:id="@+id/shopping_cart_section_prom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_item_last_bg_selector"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 订单优惠end -->
+
+
+    <!-- 配送方式 -->
+
+    <RelativeLayout
+        android:id="@+id/distribution_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pay_method_relative"
+        android:layout_below="@id/pay_method_relative"
+        android:background="@drawable/more_item_last_bg_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_goods_distribution_method"
+            android:textColor="@color/main_default_black_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_method_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/shopping_goods_distribution_method"
+            android:layout_marginRight="25dip"
+            android:textColor="@color/weak_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_goods_distribution_method"
+            android:layout_below="@id/shopping_goods_distribution_method"
+            android:layout_marginTop="10dip"
+            android:text="@string/shopping_goods_distribution_time"
+            android:textColor="@color/weak_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_time_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_goods_distribution_time"
+            android:layout_marginRight="25dip"
+            android:layout_toRightOf="@id/shopping_goods_distribution_time"
+            android:textColor="@color/weak_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_phone_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_goods_distribution_time"
+            android:layout_below="@id/shopping_goods_distribution_time_data"
+            android:text="@string/shopping_goods_distribution_phone_confirm"
+            android:textColor="@color/weak_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_distribution_phone_confirm_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_goods_distribution_phone_confirm"
+            android:layout_toRightOf="@id/shopping_goods_distribution_phone_confirm"
+            android:textColor="@color/weak_text_color" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/common_right_arrow_bg_selector" />
+    </RelativeLayout>
+
+    <!-- 发票信息begin -->
+
+    <RelativeLayout
+        android:id="@+id/invoice_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/more_item_single_bg_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/shopping_goods_invoice_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/shopping_goods_invoice_info"
+            android:textColor="@color/main_default_black_text_color" />
+
+        <RelativeLayout
+            android:id="@+id/shopping_invoice_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_goods_invoice_info"
+            android:layout_below="@id/shopping_goods_invoice_info"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopping_goods_invoice_type"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_type_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopping_goods_invoice_type"
+                android:layout_toRightOf="@id/shopping_goods_invoice_type"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shopping_goods_invoice_type"
+                android:layout_below="@id/shopping_goods_invoice_type"
+                android:text="@string/shopping_goods_invoice_title"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_title_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopping_goods_invoice_title"
+                android:layout_toRightOf="@id/shopping_goods_invoice_title"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shopping_goods_invoice_title"
+                android:layout_below="@id/shopping_goods_invoice_title"
+                android:text="@string/shopping_goods_invoice_title_name"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_title_name_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopping_goods_invoice_title_name"
+                android:layout_toRightOf="@id/shopping_goods_invoice_title_name"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shopping_goods_invoice_title_name"
+                android:layout_below="@id/shopping_goods_invoice_title_name_data"
+                android:text="@string/shopping_goods_invoice_content"
+                android:textColor="@color/weak_text_color" />
+
+            <TextView
+                android:id="@+id/shopping_goods_invoice_content_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopping_goods_invoice_content"
+                android:layout_toRightOf="@id/shopping_goods_invoice_content"
+                android:textColor="@color/weak_text_color" />
+
+            <RelativeLayout
+                android:id="@+id/invoice_last_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/shopping_goods_invoice_content"
+                android:layout_below="@id/shopping_goods_invoice_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_regtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping_goods_order_regtel"
+                    android:textColor="@color/weak_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_regtel_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/shopping_goods_order_regtel"
+                    android:layout_toRightOf="@id/shopping_goods_order_regtel"
+                    android:textColor="@color/weak_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_bankname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/shopping_goods_order_regtel"
+                    android:layout_below="@id/shopping_goods_order_regtel"
+                    android:text="@string/shopping_goods_order_bankname"
+                    android:textColor="@color/weak_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_bankname_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/shopping_goods_order_bankname"
+                    android:layout_toRightOf="@id/shopping_goods_order_bankname"
+                    android:textColor="@color/weak_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_bankaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/shopping_goods_order_bankname"
+                    android:layout_below="@id/shopping_goods_order_bankname"
+                    android:text="@string/shopping_goods_order_bankaccount"
+                    android:textColor="@color/weak_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_order_bankaccount_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/shopping_goods_order_bankaccount"
+                    android:layout_toRightOf="@id/shopping_goods_order_bankaccount"
+                    android:textColor="@color/weak_text_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/common_right_arrow_bg_selector" />
+    </RelativeLayout>
+    <!-- 发票信息end -->
+
+</LinearLayout>

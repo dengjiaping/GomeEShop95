@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/segments_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+
+        <TextView
+            android:id="@+id/mygome_return_detail"
+            style="@style/product_list_group_item_style"
+            android:layout_width="0dip"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/segments_tabs_left_bg_selector"
+            android:text="申请返修/退换货" >
+        </TextView>
+        <TextView
+            android:id="@+id/mygome_return_search"
+            style="@style/product_list_group_item_style"
+            android:layout_width="0dip"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/segments_tabs_right_bg_selector"
+            android:text="返修/退换货记录" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mygome_return_listView1"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:fadingEdge="none"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:visibility="visible" >
+    </ListView>
+    <ListView
+        android:id="@+id/mygome_return_listView2"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:fadingEdge="none"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/hint_text_color"
+        android:textSize="18sp"
+        android:visibility="gone" >
+    </TextView>
+
+</LinearLayout>

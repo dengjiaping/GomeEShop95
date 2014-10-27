@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/register_table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_item_single_normal"
+            android:gravity="center_vertical"
+            android:minHeight="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/mobile"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/modify_payment_password_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:hint="@string/login_register_phonenum"
+                android:singleLine="true"
+                android:textColor="@color/main_default_black_text_color"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:text="此手机号用于接收团购券信息，请确保手机号可使用。"
+            android:textColor="@color/hint_text_color"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dip" >
+
+            <LinearLayout
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_single_normal"
+                android:gravity="center_vertical"
+                android:minHeight="45dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/check_code"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/modify_payment_check_code"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_span="1"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/login_code_hit"
+                    android:singleLine="true"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/get_button"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/common_orange_btn"
+                android:text="@string/get_phone_check_code"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/check_phone_describe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:text="短信已发送到您的手机，如在 120 秒之内还没有收到短信验证码，请重新获取验证码"
+            android:textColor="@color/hint_text_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="80dip"
+            android:background="@drawable/common_orange_btn"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

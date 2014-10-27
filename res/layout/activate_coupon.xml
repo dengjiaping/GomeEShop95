@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <RelativeLayout
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/more_item_single_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:layout_span="1"
+                        android:text="ID:"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18dip"
+                        android:id="@+id/mygome_default_coupon_code"
+                         />
+
+                    <EditText
+                        android:id="@+id/mygome_default_coupon_code_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/mygome_default_coupon_code"
+                        android:layout_toLeftOf="@+id/mygome_default_coupon_code_del_imageView"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/mygome_default_coupon_code"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dip"
+                        android:singleLine="true"
+                        android:layout_span="2"
+                        android:inputType="textVisiblePassword"
+                        android:digits="@string/mygome_activate_coupon_digits"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18dip" />
+
+                    <ImageView
+                        android:id="@+id/mygome_default_coupon_code_del_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/public_appraise_deleted"
+                        android:layout_toLeftOf="@+id/scan_coupon_code"
+                        android:visibility="gone"
+                         />
+
+                    <ImageView
+                        android:id="@+id/scan_coupon_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/btn_erweima_selector" />
+                </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/mygome_default_coupon_code_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginLeft="15dip"
+                        android:text="你输入的优惠券无效"
+                        android:textColor="@color/price_text_color"
+                        android:visibility="gone"
+                         />
+
+                <RelativeLayout
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/more_item_single_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:layout_span="1"
+                        android:text="@string/activate_code"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18dip" 
+                        android:id="@+id/mygome_default_activate_code"
+                        />
+
+                    <EditText
+                        android:id="@+id/mygome_default_activate_code_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mygome_default_activate_code"
+                        android:layout_toLeftOf="@+id/activate_code_del_imageView"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/mygome_default_activate_code"
+                        android:singleLine="true"
+                        android:inputType="textVisiblePassword"
+                        android:digits="@string/mygome_activate_coupon_digits"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18dip" />
+                    <ImageView
+                        android:id="@+id/activate_code_del_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="5dip"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/public_appraise_deleted"
+                        android:visibility="gone"
+                         />
+                </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/mygome_default_activate_code_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginLeft="15dip"
+                        android:text="激活码有误，请重新输入"
+                        android:textColor="@color/price_text_color"
+						android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/tableRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/more_item_single_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:layout_span="1"
+                        android:text="@string/login_code"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18dip" 
+                        android:id="@+id/identifying_code_text"
+                        />
+
+                    <EditText
+                        android:id="@+id/identifying_code_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/identifying_code_text"
+                        android:layout_toLeftOf="@+id/identifying_code_del_imageView"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/login_code_hit"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:inputType="textVisiblePassword"
+                        android:digits="@string/mygome_activate_coupon_digits"
+                        android:textColor="@color/hint_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18dip" />
+
+                    <ImageView
+                        android:id="@+id/identifying_code_del_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/identifying_code"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="5dip"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/public_appraise_deleted"
+                        android:visibility="gone"
+                         />
+
+                    <ImageView
+                        android:id="@+id/identifying_code"
+                        android:layout_width="60dip"
+                        android:layout_height="23dip"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/code" />
+                </RelativeLayout>
+
+                    <TextView 
+                        android:id="@+id/mygome_default_identifying_code_error"
+                        android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:layout_marginLeft="15dip"
+                    	android:text="验证码错误"
+                    	android:layout_marginTop="5dip"
+                    	android:textColor="@color/price_text_color"
+                    	android:visibility="gone"
+                        />
+            <Button
+                android:id="@+id/activate_coupon_submit_button"
+                style="@style/phone_recharge_btn_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dip"
+                android:background="@drawable/common_orange_btn"
+                android:text="@string/submit"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

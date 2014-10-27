@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/check_redticket"
+        style="@style/checkbox_custom_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip" >
+
+        <TextView
+            android:id="@+id/shopping_coupon_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/shopping_goods_order_conpon_ticket_id"
+            android:textColor="@color/hint_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_coupon_ticket_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_coupon_ticket"
+            android:layout_toRightOf="@id/shopping_coupon_ticket"
+            android:textColor="@color/main_default_black_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_coupon_ticket"
+            android:layout_below="@id/shopping_coupon_ticket"
+            android:layout_marginTop="10dip"
+            android:text="@string/shopping_goods_order_conpon_ticket_amount"
+            android:textColor="@color/hint_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_amount_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_goods_order_conpon_ticket_amount"
+            android:layout_toRightOf="@id/shopping_goods_order_conpon_ticket_amount"
+            android:textColor="@color/price_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_goods_order_conpon_ticket_amount"
+            android:layout_below="@id/shopping_goods_order_conpon_ticket_amount"
+            android:layout_marginTop="10dip"
+            android:text="@string/shopping_goods_order_conpon_ticket_date"
+            android:textColor="@color/hint_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_date_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_goods_order_conpon_ticket_date"
+            android:layout_toRightOf="@id/shopping_goods_order_conpon_ticket_date"
+            android:textColor="@color/price_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/shopping_goods_order_conpon_ticket_date"
+            android:layout_below="@id/shopping_goods_order_conpon_ticket_date"
+            android:layout_marginTop="10dip"
+            android:text="@string/shopping_goods_order_conpon_ticket_desc"
+            android:textColor="@color/hint_text_color" />
+
+        <TextView
+            android:id="@+id/shopping_goods_order_conpon_ticket_desc_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shopping_goods_order_conpon_ticket_desc"
+            android:layout_toRightOf="@id/shopping_goods_order_conpon_ticket_desc"
+            android:textColor="@color/price_text_color" />
+    </RelativeLayout>
+
+</LinearLayout>

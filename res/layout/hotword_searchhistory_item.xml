@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/hotword_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/main_default_black_text_color" />
+
+    <Button
+        android:id="@+id/search_history_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/common_delete_bg_selector"
+        android:text="@string/shopping_cart_delete"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

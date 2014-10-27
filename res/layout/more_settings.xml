@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/more_settings_has_image_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/more_item_single_bg_selector" >
+
+        <TextView
+            style="@style/common_settings_main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/no_image_version" />
+
+        <CheckBox
+            android:id="@+id/more_settings_cb_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_start_location_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/more_item_single_bg_selector" >
+
+        <TextView
+            style="@style/common_settings_main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/start_location" />
+
+        <com.gome.ecmall.custom.SlipButton
+            android:id="@+id/slipbutton_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_settings_clear_cache_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_margin="6dip"
+        android:background="@drawable/more_item_single_bg_selector" >
+
+        <TextView
+            style="@style/common_settings_main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/clear_cache" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_start_notification_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/more_item_single_bg_selector" >
+
+        <TextView
+            style="@style/common_settings_main_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/start_notification" />
+
+        <com.gome.ecmall.custom.SlipButton
+            android:id="@+id/slipbutton_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/change_ip_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="12dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Spinner
+            android:id="@+id/change_ip_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="12dip" />
+
+        <TextView
+            android:id="@+id/change_ip_text"
+            style="@style/common_settings_main_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="12dip"
+            android:text="2.3.0-dev-0808-18:15"
+            android:textColor="@color/common_orange_textcolor" />
+    </LinearLayout>
+
+</LinearLayout>

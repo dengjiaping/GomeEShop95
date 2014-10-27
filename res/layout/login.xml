@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="12dip"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_first_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_user_name"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/login_username_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_span="3"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/login_default_user_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_marginTop="-0.5dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_middle_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_password"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <com.bangcle.safekeyboard.PasswordEditText
+                        android:id="@+id/login_password_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:hint="@string/login_default_password"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_marginTop="-1.5dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_middle_bg_selector"
+                    android:minHeight="45dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_code"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/login_code_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/login_code_hit"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textColor="@color/hint_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/login_code_del_imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/public_appraise_deleted"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/image_login_code"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/code" />
+                </TableRow>
+                <!-- 原自动登录，现废弃使用 -->
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="-1.5dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:minHeight="45dip" >
+                <CheckBox
+                    android:id="@+id/login_auto_login_check_box"
+                    style="@style/checkbox_custom_style"
+                    android:layout_width="120dip"
+                    android:layout_height="45dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:text="@string/login_auto_login"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/forget_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_forget_password"
+                    android:textColor="@color/login_forget_password"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/more_item_single_bg_selector"
+                android:minHeight="50dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/login_new_register"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/image_login_quick_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/common_right_arrow_bg_selector"
+                    android:contentDescription="@string/login_quick_register" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/third_layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="9.3dip"
+                    android:layout_weight="1"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/third_login"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="9.3dip"
+                    android:layout_weight="1"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/third_layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:visibility="gone" >
+
+                <com.gome.ecmall.home.login.HorizontalListView
+                    android:id="@+id/third_login_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dip"
+                    android:layout_toLeftOf="@+id/right_arrow"
+                    android:layout_toRightOf="@+id/left_arrow"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/third_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </com.gome.ecmall.home.login.HorizontalListView>
+
+                <ImageView
+                    android:id="@+id/left_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:src="@drawable/left_arrow" />
+
+                <ImageView
+                    android:id="@+id/right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

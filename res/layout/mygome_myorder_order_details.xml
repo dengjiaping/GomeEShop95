@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <include layout="@layout/mygome_myorder_order_details_title" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mygome_title_bg" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mygome_myorder_order_process_imageView1"
+                android:layout_width="320dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/order_status"
+                android:visibility="visible" />
+
+            <include layout="@layout/mygome_myorder_order_status_item" />
+
+            <!-- <include layout="@layout/mygome_myorder_order_status_splite_item" /> -->
+
+
+            <!-- 节能补贴 -->
+
+            <include layout="@layout/mygome_myorder_order_details_energy_effcient" />
+
+            <!-- >>>>>>>>>>>>>>>>  送货信息     START<<<<<<<<<<<<<<< -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/more_item_first_normal"
+                android:minHeight="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/deliver_info"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_details_delivery_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_last_bg_selector" >
+
+                <TextView
+                    android:id="@+id/order_details_simple_textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="15dip" />
+            </RelativeLayout>
+
+            <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>   商品列表    <<<<<<<<<<<<<<<<<<<<<<<< -->
+
+            <RelativeLayout
+                android:id="@+id/rl_gome_open_close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/good_shop_name_top_background"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_gome_open_close"
+                    android:layout_width="250dp"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:singleLine="true"
+                    android:text="@string/goods_list"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_gome_open_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/category_arrow_down" />
+                 <TextView
+                    android:layout_width="1px"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@id/iv_gome_open_close"
+                    android:background="@color/common_round_line_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/more_item_last_normal"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="10dp" >
+
+                <!-- >>>>>>>>>>>>>   订单商品列表    <<<<<<<<<<<<<<< -->
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/order_details_order_goods_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:divider="@drawable/line"
+                    android:listSelector="@android:color/transparent" />
+
+                <!-- >>>>>>>>>>>>>  套购商品列表    <<<<<<<<<<<<<<< -->
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/order_details_suite_goods__list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" />
+
+                <include layout="@layout/mygome_myorder_order_details_shop_goods_list_footview" />
+                <!-- ****************店铺商品 ************************* -->
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/order_details_shop_goods__list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+            <!-- >>>>>>>>>>>>>>>>>>> 订单优惠 START <<<<<<<<<<<<<<<<<<<<<<<< -->
+
+            <LinearLayout
+                android:id="@+id/mygome_myorder_order_details_order_prom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_order_prom_open_close"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/more_item_single_prom_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="40dp"
+                        android:text="@string/order_discount"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18dip"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_order_prom_open_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                        android:background="@drawable/category_arrow_down" />
+                     <TextView
+                    android:layout_width="1px"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@id/iv_order_prom_open_close"
+                    android:background="@color/common_round_line_color" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_order_prom_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_last_normal"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.gome.ecmall.custom.DisScrollListView
+                        android:id="@+id/order_details_proms_list"
+                        style="@style/common_listview_cacheColorHint_no_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp" >
+                    </com.gome.ecmall.custom.DisScrollListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- >>>>>>>>>>>>>>>>>>> 订单优惠 END <<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+            <!-- >>>>>>>>>>>>>>>>>>>>>>>>>付款信息START <<<<<<<<<<<<<<<<<< -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/more_item_first_normal"
+                android:gravity="center_vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:text="@string/payment_info"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/order_details_payment_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:paddingBottom="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/mygome_myorder_order_details_payment_info_linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="15dip" >
+
+                    <TextView
+                        android:id="@+id/order_details_pay_mode_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/pay_mode" />
+
+                    <TextView
+                        android:id="@+id/order_details_total_price_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/total_price" />
+
+                    <TextView
+                        android:id="@+id/order_details_order_prem_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/sub_order_order_discount" />
+
+                    <TextView
+                        android:id="@+id/order_details_feight_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:layout_marginLeft="21dp"
+                        android:text="@string/feight" />
+
+                    <TextView
+                        android:id="@+id/order_details_red_ticket_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/use_red_ticket" />
+
+                    <TextView
+                        android:id="@+id/order_details_blue_ticket_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/use_blue_ticket"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/order_details_account_balance_1"
+                        style="@style/mygome_order__text__style_1"
+                        android:text="@string/account_balance" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/mygome_order__text__style_1"
+                            android:text="@string/order_price" />
+
+                        <TextView
+                            android:id="@+id/order_details_order_total_price_1"
+                            style="@style/mygome_order__text__style_1"
+                            android:layout_marginLeft="1dp"
+                            android:textColor="@color/price_text_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- >>>>>>>>>>>>>>>>>>>>>>>>>付款信息END <<<<<<<<<<<<<<<<<<< -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

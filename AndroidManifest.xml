@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gome.eshopnew"
+    android:versionCode="28"
+    android:versionName="2.3.0-Dev" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.gome.ecmall.home.GlobalApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.gome.ecmall.home.LaunchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gome.ecmall.home.GomeEMallActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_exit_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>start Main tabs Activity<<<<<<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.home.HomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.gome.ecmall.home.CategoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.gome.ecmall.home.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.gome.ecmall.home.ShoppingCartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.gome.ecmall.home.MoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.gome.ecmall.home.homepage.SearchResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.gome.ecmall.home.homepage.SearchFilterResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>end Main Tabs Activity<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Start 首页Activity<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.home.homepage.RecommendsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Start 首页Activity<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>Start 更多标签页 Activity<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.home.more.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.rankinglist.RankingListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.rankinglist.RankingFilterListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.HelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.StoreHelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.UseHelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.UseCourseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.gome.ecmall.home.more.AboutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.UseHelpDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.AnnouncementListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.AnnouncementDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.ProductBrowseHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.CityListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.GomeStoreListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.NearStoreListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.NearStoreMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.NearStoreMapWallActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.more.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- >>>>>>>>>>>>>>>>>>>>>end 更多标签页 Activity<<<<<<<<<<<<<<<<<< -->
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>start 分类标签页Activity<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductFilterListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductAppraiseListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductQuestionListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.PublishProductQuestionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductShowActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductSummaryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductPhotoViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.category.ProductIntroductionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensor"
+            android:theme="@style/activity_anim_theme" />
+        <!-- >>>>>>>>>>>>>>>>>>>>>end 分类标签页Activity<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>登录注册<<<<<<<<<<<<<<<<<<<<<<<<<<<<< START -->
+        <activity
+            android:name="com.gome.ecmall.home.login.LoginActivity"
+            android:label="@string/login_user_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" >
+            <intent-filter>
+                <action android:name="com.gome.ecmall.ACTION_LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gome.ecmall.home.login.RegisterActivity"
+            android:label="@string/login_user_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gome.ecmall.home.login.LoginAgreeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.login.ActivateAccountActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 找回密码页面 -->
+        <activity
+            android:name="com.gome.ecmall.home.login.RetrievePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <activity
+            android:name="com.gome.ecmall.home.login.RetrievePasswordStep2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+        <activity
+            android:name="com.gome.ecmall.home.login.RetrievePasswordStep3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|adjustResize|stateHidden" />
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>登录注册 END<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>购物车START<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartDetailsActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartOrderActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartOrderConsInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartConsInfoAddActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartPaymentActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartShippingMethodActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartInvoiceInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartCouponActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartOrderSuccessActivity"
+            android:configChanges="keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartOrderPaySuccessActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartWanceInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartWanceProcessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartWanceAnnountActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.shopping.ShoppingCartWanceConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>购物车START<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <!-- 搜索 -->
+        <activity
+            android:name="com.gome.ecmall.hotsearch.HotWordHistoryActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>我的国美<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyGomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.NewMyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyFavActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyMsgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.OrderDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.SubOrderDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyAppraiseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyAddressEditOrAddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.GoodsAppraiseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyExchangeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.ActivateCouponActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.CouponRuleDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyNewCouponActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 退换货 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyReturnListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyReturnDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyReturnSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.ExchangeDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.MyReturnAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.mygome.RefundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+
+        <!-- 咨询回复 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.AdvisoryReplyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 团购 -->
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyChangeCityActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.GroupLimitOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.SetGroupBuyMobileActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.ModifyGroupBuyMobileActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupSubmitOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupOrderPaySuccessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuySearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+         <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuySearchResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+         <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyStoreMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+         <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupOrderDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+         <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupTicketsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+         <activity
+            android:name="com.gome.ecmall.home.groupbuy.VirtualGroupApplyRefundActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 站内信 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.StationLetterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.groupbuy.NewGroupBuyDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 站内信详情 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.StationLetterDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 热门促销改版 -->
+        <activity
+            android:name="com.gome.ecmall.home.hotproms.HotPromotions2Activity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 活动专题 -->
+        <activity
+            android:name="com.gome.ecmall.home.hotproms.PromtionActivitiesActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+
+        <!-- 套购 -->
+        <activity
+            android:name="com.gome.ecmall.home.suitebuy.SuiteBuyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.suitebuy.SuiteBuyFilterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 条码购 -->
+        <activity
+            android:name="com.gome.ecmall.home.barcode.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.gome.ecmall.home.barcode.BarcodeInputStreamActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.barcode.BarcodeScanReusltListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.hotproms.PreSellActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+
+        <!-- 预售模块 -->
+        <activity
+            android:name="com.gome.ecmall.home.barcode.BarcodeScanResultHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 新版限时抢购 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.NewLimitbuyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版限时抢购评价 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitBuyAppraiseListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版限时抢购商品详情 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitBuySummaryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购秘籍 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyEsotericaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购收货人信息 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyConsInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购添加新地址 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyConsInfoAddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购配送方式 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyShippingMethodActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购发票信息 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyInvoiceInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版抢购提交 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitFlashConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" >
+        </activity>
+        <!-- 新版节能补贴 -->
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitFlashWanceInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.limitbuy.LimitbuyDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 降价通知 -->
+        <activity
+            android:name="com.gome.ecmall.home.category.BelowPriceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 到货通知 -->
+        <activity
+            android:name="com.gome.ecmall.home.category.ArriNoticeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.hotproms.HotPromTheTemActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.home.hotproms.HotPromotionsRuleActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 手机充值 -->
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderSubmitSuccessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderPaySuccessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeHelpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme" />
+        <!-- 第三方登陆 -->
+        <activity
+            android:name="com.gome.ecmall.home.login.ThirdLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 手机充值订单 PhoneRechargeOrderListActivity -->
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 手机充值订单详情 PhoneRechargeDetailActivity -->
+        <activity
+            android:name="com.gome.ecmall.phonerecharge.PhoneRechargeOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 银联支付配置文件 -->
+        <activity
+            android:name="com.umpay.creditcard.android.UmpayActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 账户安全 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.AccountSecurityActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.ModifyPasswordActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 设置支付密码 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.SetPaymentPasswordActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 修改支付密码 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.ModifyPaymentPasswordActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 修改支付密码 -->
+        <activity
+            android:name="com.gome.ecmall.home.mygome.ModifyPaymentPassword2Activity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 获取优惠券页面 -->
+        <activity
+            android:name="com.gome.ecmall.home.coupon.GetCouponActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_anim_theme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 消息推送 -->
+        <service
+            android:name="com.gome.ecmall.push.PushService"
+            android:process=":message" />
+
+        <receiver android:name="com.gome.ecmall.push.PushBroadCastReceiver" >
+            <intent-filter>
+
+                <!-- 手机开机 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 手机唤醒解锁 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 连接断开后重连广播 -->
+                <action android:name="com.gome.ecmall.push.service.restart"/>  
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 银联支付权限配置 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 二维码权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- 创建和删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 收到开机广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+</manifest>

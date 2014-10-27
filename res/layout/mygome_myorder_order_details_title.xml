@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mygome_myorder_order_details_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="4dp"
+    android:background="@drawable/yellow_background" >
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_deatils_order_id_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/order_id"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_order_submit_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mygome_myorder_order_deatils_order_id_textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/order_submit_time"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_order_amount_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#CC0000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/mygome_myorder_order_details_order_amount_textView1"
+        android:text="@string/order_price"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_order_elecConfmCode_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mygome_myorder_order_details_order_submit_textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="电子签收码:"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_order_elecConfmCode_data_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mygome_myorder_order_details_order_elecConfmCode_textView1"
+        android:layout_toRightOf="@id/mygome_myorder_order_details_order_elecConfmCode_textView1"
+        android:textColor="#CC0000"
+        android:textSize="15sp"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_order_FixedtimeOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mygome_myorder_order_details_order_elecConfmCode_textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/price_text_color"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

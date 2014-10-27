@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg_selector" >
+
+    <ImageView
+        android:id="@+id/barcodehistory_list_item_icon"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="10dip"
+        android:layout_centerVertical="true"
+        android:padding="1dip" />
+
+    <ImageView
+        android:id="@+id/barcodehistory_list_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/common_right_arrow_bg_selector" />
+
+    <TextView
+        android:id="@+id/barcodehistory_list_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_toLeftOf="@id/barcodehistory_list_item_arrow"
+        android:layout_toRightOf="@id/barcodehistory_list_item_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingBottom="2dip"
+        android:paddingRight="4dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/barcodehistory_list_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_alignLeft="@id/barcodehistory_list_item_title"
+        android:layout_below="@id/barcodehistory_list_item_title"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/price_text_color"
+        android:textSize="16dip"
+         />
+
+    <TextView
+        android:id="@+id/barcodehistory_list_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_alignLeft="@id/barcodehistory_list_item_number"
+        android:layout_below="@id/barcodehistory_list_item_number"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textSize="16sp"
+         />
+
+    <Button
+        android:id="@+id/category_productlist_list_item_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dip"
+        android:background="@drawable/common_delete_bg_selector"
+        android:padding="10dip"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

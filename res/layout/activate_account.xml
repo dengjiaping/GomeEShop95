@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gome.eshopnew"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/activate_account_auth_user_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/more_item_single_normal"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_mobel"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16dip" />
+
+                <EditText
+                    android:id="@+id/activate_account_mobile_editText"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="phone" 
+                    android:hint="@string/login_register_phonenum"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16dip"/>
+
+                <ImageView
+                    android:id="@+id/activate_account_del_mobile_imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/public_appraise_deleted"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/activate_account_get_mobile_auth_code_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/common_orange_btn"
+                    android:text="@string/get_check_code"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/activate_account_timer_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/regain_parity_check_code_later"
+                    android:textColor="@color/hint_text_color"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/more_item_single_normal"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_code"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16dip" />
+
+                <EditText
+                    android:id="@+id/activate_account_mobile_check_code_editText"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_check_code"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="16dip" />
+                  <ImageView
+                    android:id="@+id/activate_account_del_check_code_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/public_appraise_deleted"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/check_code_declare"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activate_account_resister_successful_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/common_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_single_normal"
+                android:minHeight="100dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activate_account_success_auth_ok_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/order_success_duigou"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/common_green_textcolor"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/activate_account_success_account_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_name"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/activate_account_success_phone_number_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_mobel"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/login_gome_user_mobile"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

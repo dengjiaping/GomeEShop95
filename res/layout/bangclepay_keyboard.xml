@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bangclepay_keyboard_bg"
+    android:orientation="vertical"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip" >
+
+        <ImageView
+            android:layout_width="22dip"
+            android:layout_height="16dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/bangclepay_keyboard_icon" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bangclepay_keyboard_title"
+            android:textColor="@color/bangclepay_keyboard_title_blue" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <RadioButton
+            android:id="@+id/bangclepay_keyboard_button_num"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_num"
+            android:button="@null"
+            android:paddingLeft="50dip"
+            android:text="@string/bangclepay_keyboard_num"
+            android:textColor="@color/bangclepay_style_keyboard_title_color" />
+
+        <RadioButton
+            android:id="@+id/bangclepay_keyboard_button_letter"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_letter"
+            android:button="@null"
+            android:paddingLeft="50dip"
+            android:text="@string/bangclepay_keyboard_letter"
+            android:textColor="@color/bangclepay_style_keyboard_title_color" />
+
+        <RadioButton
+            android:id="@+id/bangclepay_keyboard_button_sign"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign"
+            android:button="@null"
+            android:paddingLeft="50dip"
+            android:text="@string/bangclepay_keyboard_sign"
+            android:textColor="@color/bangclepay_style_keyboard_title_color" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/bangclepay_keyboard_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/bangclepay_keyboard_input"
+        android:editable="false"
+        android:paddingLeft="10dip"
+        android:password="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/bangclepay_keyboard_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

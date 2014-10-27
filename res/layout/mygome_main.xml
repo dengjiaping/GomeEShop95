@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的国美 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_gome_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mygome_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/common_top_layout"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            style="@style/common_scrollbar_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/mygome_title_user"
+                    layout="@layout/mygome_title" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mygome_my_deal"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+                <!-- 订单相关 -->
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/mygome_my_order_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:listSelector="@android:color/transparent" />
+
+                <!-- 账户中心-->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mygome_account_center"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/mygome_my_fav_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" />
+
+                <!-- 消息相关 -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mygome_message_center"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/mygome_my_msg_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:listSelector="@android:color/transparent" />
+				<!-- 客户服务相关 -->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mygome_customer_service"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/mygome_my_service_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/coupon_mature_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_top_layout"
+        android:background="#232323"
+        android:paddingBottom="10dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/coupon_mature_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:background="@drawable/my_coupon_warn_icon" />
+
+        <ImageView
+            android:id="@+id/coupon_mature_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/limitbuy_esoterica_close" />
+
+        <TextView
+            android:id="@+id/mygome_coupon_mature_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/coupon_mature_icon"
+            android:layout_toRightOf="@+id/coupon_mature_icon"
+            android:text="@string/mygome_coupon_mature_title"
+            android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/mygome_coupon_mature_list"
+            style="@style/more_section_listview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mygome_coupon_mature_title_tv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/coupon_mature_icon"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:listSelector="@android:color/transparent" />
+    </RelativeLayout>
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+</RelativeLayout>

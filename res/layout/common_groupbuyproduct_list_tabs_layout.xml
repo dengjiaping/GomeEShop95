@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupbuy_title_liearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="65dip"
+    android:background="@drawable/goupbuy_parent_btn_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/groupbuy_tab_all_region"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/group_buy_select_btn"
+        android:text="@string/groupbuy_all_region"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/groupbuy_tab_all_cagy"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/group_buy_select_btn"
+        android:text="@string/groupbuy_all_cagy"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/groupbuy_tab_all_default_soft"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/group_buy_select_btn"
+        android:text="@string/groupbuy_default_soft"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+
+</LinearLayout>

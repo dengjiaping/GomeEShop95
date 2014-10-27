@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/consinfo_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/more_item_first_bg_selector" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_req_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_cons_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_goods_req_name"
+                    android:text="@string/shopping_goods_cons_name_nonull"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <EditText
+                    android:id="@+id/shopping_goods_cons_name_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_name"
+                    android:background="@drawable/more_item_single_normal"
+                    android:hint="@string/shopping_goods_order_consinfo_name"
+                    android:maxLength="20"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_middle_bg_selector" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_req_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_cons_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_goods_req_phone"
+                    android:text="@string/shopping_goods_cons_phone"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <EditText
+                    android:id="@+id/shopping_goods_cons_phone_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_phone"
+                    android:background="@drawable/more_item_single_normal"
+                    android:hint="@string/shopping_goods_order_consinfo_phone"
+                    android:inputType="phone"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_middle_bg_selector"
+                android:paddingBottom="10dip" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_req_seleaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_cons_seleaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_goods_req_seleaddress"
+                    android:text="@string/shopping_goods_order_consinfo_seleaddress"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <Button
+                    android:id="@+id/shopping_province_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11px"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_seleaddress"
+                    android:background="@drawable/common_spinner_btn_selector"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:text="@string/shopping_goods_order_consinfo_province"
+                    android:textColor="@color/weak_text_color" />
+
+                <Button
+                    android:id="@+id/shopping_city_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/shopping_province_data"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/shopping_province_data"
+                    android:background="@drawable/common_spinner_btn_selector"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:text="@string/shopping_goods_order_consinfo_city"
+                    android:textColor="@color/weak_text_color" />
+
+                <Button
+                    android:id="@+id/shopping_discont_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/shopping_province_data"
+                    android:layout_below="@id/shopping_province_data"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/common_spinner_btn_selector"
+                    android:text="@string/shopping_goods_order_consinfo_discont"
+                    android:textColor="@color/weak_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_middle_bg_selector" >
+
+                <TextView
+                    android:id="@+id/shopping_goods_req_detailaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/price_text_color" />
+
+                <TextView
+                    android:id="@+id/shopping_goods_cons_detailaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/shopping_goods_req_detailaddress"
+                    android:text="@string/shopping_goods_order_consinfo_detailaddress"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <EditText
+                    android:id="@+id/shopping_goods_cons_detailaddress_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_detailaddress"
+                    android:background="@drawable/more_item_single_normal"
+                    android:hint="@string/shopping_goods_order_consinfo_detailaddress_hint"
+                    android:imeOptions="actionDone"
+                    android:maxLength="40"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_middle_bg_selector" >
+				
+				<TextView
+                    android:id="@+id/shopping_goods_cons_email_xing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/main_default_black_text_color" />
+                <TextView
+                    android:id="@+id/shopping_goods_cons_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/shopping_goods_cons_email_xing"
+                    android:text="@string/shopping_goods_order_consinfo_email_new"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <EditText
+                    android:id="@+id/shopping_goods_cons_email_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_email"
+                    android:background="@drawable/more_item_single_normal"
+                    android:hint="@string/shopping_goods_order_consinfo_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zope_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_last_bg_selector" >
+				<TextView
+                    android:id="@+id/shopping_goods_cons_zope_xing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="*"
+                    android:textColor="@color/main_default_black_text_color" />
+                <TextView
+                    android:id="@+id/shopping_goods_cons_zope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/shopping_goods_cons_zope_xing"
+                    android:text="@string/shopping_goods_order_consinfo_zope_new"
+                    android:textColor="@color/main_default_black_text_color" />
+
+                <EditText
+                    android:id="@+id/shopping_goods_cons_zope_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    android:layout_toRightOf="@id/shopping_goods_cons_zope"
+                    android:background="@drawable/more_item_single_normal"
+                    android:hint="@string/shopping_goods_order_consinfo_zope_hint"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

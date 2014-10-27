@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/ll_virtual_type_tickets_segments_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/segments_bg"
+        android:gravity="center" >
+
+        <com.gome.ecmall.custom.SegmentTabs
+            android:id="@+id/virtual_type_tickets_segments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            Segments="@array/tab_type_virtual_group_tickets" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_expire_tickets"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_tickets_waring" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="您有团购劵即将到期，为避免您的损失请尽快使用。"
+            android:textColor="@color/price_text_color" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_tickets_already_used"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/lv_tickets_no_used"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_no_data_used"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_text_color"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_no_data_not_used"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_text_color"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+
+</LinearLayout>

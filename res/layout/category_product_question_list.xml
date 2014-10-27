@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/category_product_question_search_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/category_product_question_search_frame"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/category_product_question_btn_search_category"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:background="@drawable/product_question_search_btn_selector"
+                android:text="@string/product_question" />
+
+            <EditText
+                android:id="@+id/category_product_question_et_input"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionSearch"
+                android:padding="2dip"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/category_product_question_list"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="4dip"
+        android:layout_weight="1"
+        android:dividerHeight="12dip"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dip"
+        android:textColor="@color/weak_text_color"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/common_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/common_top_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/common_title_btn_back"
+            style="@style/common_top_btn_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/common_top_title_btn_bg_selector"
+            android:minWidth="48dip"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/common_title_tv_text"
+            style="@style/common_top_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="50dip"
+            android:layout_height="44dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/common_title_btn_right"
+                style="@style/common_top_right_btn_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/third_login_icon"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/show_linearlayout"
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/product_show_total_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/product_show_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="180dip"
+                android:background="#dddddd"
+                android:orientation="vertical" >
+
+                <Gallery
+                    android:id="@+id/product_show_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="174dip"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginTop="3dip"
+                    android:spacing="20dip" />
+
+                <com.gome.ecmall.custom.PageIndicator
+                    android:id="@+id/product_show_gallery_page_indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="16dip"
+                    android:gravity="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#eeeeee" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/product_show_desc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/more_item_single_bg_selector"
+                android:padding="10dip" >
+
+                <ImageView
+                    android:id="@+id/product_show_desc_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/common_right_arrow_bg_selector" />
+
+                <TextView
+                    android:id="@+id/product_show_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toLeftOf="@id/product_show_desc_arrow"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="10dip"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/product_book_realative"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@id/product_show_desc"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toLeftOf="@id/product_show_desc_arrow"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/book_title_text_data"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:id="@+id/garyline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_below="@id/book_title_text_data"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@color/product_show_book_line" />
+
+                    <TextView
+                        android:id="@+id/book_author_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_title_text_data"
+                        android:layout_below="@id/garyline"
+                        android:text="@string/author"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_author_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_author_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_author_text"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_compile_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_author_text"
+                        android:layout_below="@id/book_author_text_data"
+                        android:text="@string/compile"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_compile_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_compile_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_compile_text"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_publishers_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_compile_text"
+                        android:layout_below="@id/book_compile_text_data"
+                        android:text="@string/publisher"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_publishers_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_publishers_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_publishers_text"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_publicationTime_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_publishers_text"
+                        android:layout_below="@id/book_publishers_text_data"
+                        android:text="@string/publicationtime"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_publicationTime_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_publicationTime_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_publicationTime_text"
+                        android:text="2012-11-14"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_edition_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_publicationTime_text"
+                        android:layout_below="@id/book_publicationTime_text_data"
+                        android:text="@string/edition"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_edition_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_edition_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_edition_text"
+                        android:text="5"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_prePrice_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/book_edition_text"
+                        android:layout_below="@id/book_edition_text_data"
+                        android:text="@string/preprice"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/book_prePrice_text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/book_prePrice_text"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/book_prePrice_text"
+                        android:text="￥0.00"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/product_show_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/product_book_realative"
+                    android:layout_marginLeft="5dip"
+                    android:paddingBottom="8dip"
+                    android:text="@string/gome_price"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/product_show_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/product_show_desc"
+                    android:layout_alignTop="@id/product_show_price_title"
+                    android:layout_toRightOf="@id/product_show_price_title"
+                    android:ellipsize="end"
+                    android:paddingBottom="10dip"
+                    android:singleLine="true"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/belowrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/product_show_price"
+                    android:layout_toLeftOf="@id/product_show_desc_arrow"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/imgbelow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/product_offsale_notice" />
+
+                    <TextView
+                        android:id="@+id/tv_below"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/imgbelow"
+                        android:text="@string/cutprice"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/product_bbcshowtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/product_show_price_title"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:paddingBottom="10dip"
+                    android:text="@string/isbbcshop"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_item_last_normal" 
+                android:visibility="gone"
+                android:id="@+id/product_show_promotion_list_ll"
+                android:paddingTop="2dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="11dip"
+                android:paddingRight="11dip"
+                >
+
+                <com.gome.ecmall.custom.DisScrollListView
+                    android:id="@+id/product_show_promotion_list"
+                    style="@style/more_section_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dip" />
+            </LinearLayout>
+
+            <com.gome.ecmall.custom.DisScrollListView
+                android:id="@+id/product_show_sku_attrs_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/common_dot_line_style_one"
+                android:dividerHeight="2dip"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:listSelector="@android:color/transparent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:text="@string/inventory_label"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/product_show_inventory_query"
+                    android:layout_width="0dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/common_city_btn_selector"
+                    android:gravity="center"
+                    android:minHeight="40dip" />
+                <!-- 无货 ; 现货 ; 预售 -->
+
+                <TextView
+                    android:id="@+id/product_show_inventory_state"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="0.6"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/common_dot_line_style_one" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/product_show_btn_add_shopcart"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_add_cart_btn"
+                    android:gravity="center"
+                    android:text="@string/add_shopcart"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/product_show_btn_add_collection"
+                    android:layout_width="90dip"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/product_show_add_collection_btn_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/common_dot_line_style_one" />
+
+            <TextView
+                android:id="@+id/product_show_goods_appraise"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/product_show_desc_list_item_bg_selector"
+                android:clickable="true"
+                android:drawableRight="@drawable/common_right_arrow_bg_selector"
+                android:gravity="left|center_vertical"
+                android:padding="8dip"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@drawable/common_dot_line_style_one" />
+
+            <TextView
+                android:id="@+id/product_show_goods_question"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/product_show_desc_list_item_bg_selector"
+                android:clickable="true"
+                android:drawableRight="@drawable/common_right_arrow_bg_selector"
+                android:gravity="left|center_vertical"
+                android:padding="8dip"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:layout_marginBottom="10dip"
+                android:background="@drawable/common_dot_line_style_one" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/empty_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/no_net_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_load_fail" />
+    </LinearLayout>
+
+</LinearLayout>

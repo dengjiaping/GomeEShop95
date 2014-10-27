@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_details_relative"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dip" 
+    android:paddingBottom="15dip" 
+    >
+
+    <RadioButton
+        android:id="@+id/shopping_details_radiobutton"
+        style="@style/radiogroup_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:checked="false"
+        android:drawableLeft="@drawable/radio_button_bg_selector" />
+
+    <TextView
+        android:id="@+id/shopping_goods_order_general_invoice_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/shopping_details_radiobutton"
+        android:textColor="@color/main_default_black_text_color" />
+
+</RelativeLayout>

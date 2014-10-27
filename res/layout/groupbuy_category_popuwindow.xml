@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#50516270"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+            android:background="#f4f4f4"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_category_one"
+                style="@style/common_scrollbar_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+            </ListView>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/lv_category_one"
+                android:layout_marginTop="-2dp"
+                android:background="#20000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_category_two"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_category_two"
+                style="@style/common_scrollbar_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/iv_category_two_bottom_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/groupbuy_arrow_pick_up" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/lv_category_two"
+                android:layout_marginTop="-5dp"
+                android:background="#20000000" />
+
+            <ImageView
+                android:id="@+id/iv_category_two_zhezhao"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f0f0f0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_category_three"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+            android:visibility="gone" >
+
+            <ListView
+                android:id="@+id/lv_category_three"
+                style="@style/common_scrollbar_style"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#e6e6e6"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/iv_category_three_bottom_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/groupbuy_arrow_pick_up" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sort"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="200dp"
+        android:layout_weight="1"
+        android:background="#f4f4f4"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_sort"
+            style="@style/common_scrollbar_style"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

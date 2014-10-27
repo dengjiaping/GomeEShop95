@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:id="@+id/sv_detail_main"
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lastlinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/more_item_first_normal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="劵号："
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_num_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_virtual_group_ticket_num"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lastlinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/more_item_last_bg_selector"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款金额："
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_money_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_virtual_group_ticket_money"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_virtual_group_ticket_money"
+                    android:layout_marginTop="20dp"
+                    android:text="申请原因："
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_virtual_group_ticket_reason_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tv_virtual_group_ticket_reason"
+                    android:layout_toRightOf="@id/tv_virtual_group_ticket_reason"
+                    android:hint="请选择一项"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/gwc_form_click_bt_selector" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_orange_btn"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提交申请"
+                android:textColor="@color/main_default_white_text_color" />
+
+            <TextView
+                android:id="@+id/tv_ask_help_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_ask_help_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_ask_help_three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

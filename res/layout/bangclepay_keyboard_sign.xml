@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/bangclepay_keyboard_num_sign_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_sign_button_more"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_more" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_sign_button_back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_back"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign9"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign11"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign12"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_sign_button_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_delete"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign13"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign14"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign15"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign16"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign17"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_button_sign18"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_key"
+            android:textColor="@color/bangclepay_style_keyboard_text_color"
+            android:textSize="@dimen/bangclepay_keyboard_fontsize" />
+
+        <Button
+            android:id="@+id/bangclepay_keyboard_sign_button_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_marginRight="@dimen/bangclepay_keyboard_key_margin"
+            android:layout_weight="1.0"
+            android:background="@drawable/bangclepay_style_keyboard_sign_ok"
+            android:paddingBottom="3dip"
+            android:text="@string/bangclepay_keyboard_ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

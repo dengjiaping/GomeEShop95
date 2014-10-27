@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_group_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_group_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <Button
+            android:id="@+id/main_group_bottom_btn_home"
+            style="@style/home_bottom_bar_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_home_bg_selector" />
+
+        <Button
+            android:id="@+id/main_group_bottom_btn_category"
+            style="@style/home_bottom_bar_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_category_bg_selector" />
+
+        <Button
+            android:id="@+id/main_group_bottom_btn_search"
+            style="@style/home_bottom_bar_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_search_bg_selector" />
+
+        <com.gome.ecmall.shopping.ShoppingButtonView
+            android:id="@+id/main_group_bottom_btn_shopcart"
+            style="@style/home_bottom_bar_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_shopcart_bg_selector"
+            android:gravity="top|right" />
+
+        <Button
+            android:id="@+id/main_group_bottom_btn_more"
+            style="@style/home_bottom_bar_item_style"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_more_bg_selector" />
+    </LinearLayout>
+
+</LinearLayout>

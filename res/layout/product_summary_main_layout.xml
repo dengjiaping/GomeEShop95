@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <com.gome.ecmall.custom.TabSwitcher
+        android:id="@+id/product_summary_tabswitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        Segments="@array/product_desc_list" />
+
+    <RelativeLayout
+        android:id="@+id/productsum_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <WebView
+            android:id="@+id/product_summary_introduce"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <WebView
+            android:id="@+id/product_summary_specification"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/product_summary_packing_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/product_summary_aftersale"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/no_net_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/common_load_fail"
+        android:visibility="gone" />
+
+</LinearLayout>

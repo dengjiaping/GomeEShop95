@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/home_homepage_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/category_product_question_search_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/category_product_question_search_frame"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/gomestore_citylist_et_input"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/homepage_search_icon"
+                android:gravity="left|center_vertical"
+                android:hint="@string/more_gomestore_search_hit"
+                android:imeOptions="actionSearch"
+                android:paddingBottom="2dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="2dip"
+                android:paddingTop="2dip"
+                android:singleLine="true"
+                android:textColor="@color/main_default_black_text_color"
+                android:textColorHint="@color/hint_text_color" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/home_homepage_search_btn"
+            android:layout_width="48dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/common_title_btn_bg_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/common_top_btn_text_color_selector"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        layout="@layout/home_search_tips_layout" />
+
+    <ScrollView
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/more_hot_city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/more_hot_city"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.gome.ecmall.custom.DisScrollListView
+                android:id="@+id/hotcity_lv_first"
+                style="@style/more_section_listview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip" />
+
+            <TextView
+                android:id="@+id/more_select_city_by_province"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/more_select_city_by_province"
+                android:textColor="@color/main_default_black_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <com.gome.ecmall.custom.DisScrollExpandableListView
+                android:id="@+id/province_lv_first"
+                style="@style/common_listview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:childDivider="@color/hint_text_color"
+                android:childIndicator="@android:color/transparent"
+                android:dividerHeight="0px"
+                android:fadingEdge="none"
+                android:groupIndicator="@android:color/transparent" />
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_gift_list_goods_type_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:textColor="@color/price_text_color"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_gift_list_sku_name_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="15dip" />
+
+</LinearLayout>

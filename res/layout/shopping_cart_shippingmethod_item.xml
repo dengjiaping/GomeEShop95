@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dip" 
+    android:paddingBottom="15dip" 
+    >
+
+    <RadioButton
+        android:id="@+id/shopping_gomeexmp_radiobutton"
+        style="@style/radiogroup_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:checked="true"
+         android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" 
+        android:drawableLeft="@drawable/radio_button_bg_selector" />
+
+    <TextView
+        android:id="@+id/shopping_goods_order_payment_cash_gomeexmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/shopping_gomeexmp_radiobutton"
+        android:text="@string/shopping_goods_order_payment_cash_gomeexmp"
+        android:textColor="@color/main_default_black_text_color" />
+    <TextView
+        android:id="@+id/shopping_goods_order_payment_cash_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/shopping_goods_order_payment_cash_gomeexmp"
+        android:textColor="@color/price_text_color" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/login_modify_password_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/more_item_single_bg_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/login_modify_password"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/more_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/common_right_arrow_bg_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/regedit_password_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/login_modify_password_warn"
+        android:textColor="@color/hint_text_color"
+        android:textSize="12sp" />
+    <RelativeLayout
+        android:id="@+id/set_payment_password_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/more_item_single_bg_selector"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/set_payment_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mygome_set_payment_password"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/common_right_arrow_bg_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="@string/login_modify_pay_password_warn"
+        android:textColor="@color/hint_text_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

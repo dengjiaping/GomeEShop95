@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="12dp" >
+
+       
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:background="@drawable/group_limit_hot_item_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_groupbuy_product_type_littlepicture_pic"
+                    android:layout_width="130dp"
+                    android:layout_height="85dp"
+                    android:scaleType="fitXY"
+                    android:background="@color/main_default_white_text_color" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_pic_shade"
+                    android:layout_width="130dp"
+                    android:layout_height="85dp"
+                    android:background="#20000000"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textColor="@color/bangclepay_keyboard_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical" >
+
+            <com.gome.ecmall.custom.PreLineTextView
+                android:id="@+id/tv_groupbuy_product_type_littlepicture_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="【十八号店通用】成龙成龙成龙成龙成龙成龙成龙"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_now_no_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/now_not_have_price"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_now_price_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_now_price_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_now_price_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_cost_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff8605"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_groupbuy_product_type_littlepicture_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="人已购买"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_grey"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/ll_main"
+        android:background="#cccccc" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/tv_grey"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/firstimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/new_groupbuy_first" />
+
+</RelativeLayout>

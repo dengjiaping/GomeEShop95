@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:easymobi="http://www.ywlx.net/apk/res/easymobi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:baselineAligned="false" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/home_homepage_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/common_top_layout"
+        android:background="@drawable/category_product_question_search_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                android:layout_marginLeft="2dip"
+                android:background="@drawable/category_product_question_search_frame"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/category_product_question_btn_search_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dip"
+                    android:background="@drawable/product_question_search_btn_selector"
+                    android:text="@string/all"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/category_product_question_et_input"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/homepage_search_icon"
+                    android:drawablePadding="2dp"
+                    android:gravity="left|center_vertical"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="4dip"
+                    android:paddingRight="2dip"
+                    android:paddingTop="2dip"
+                    android:singleLine="true"
+                    android:textColor="@color/main_default_black_text_color"
+                    android:textColorHint="@color/hint_text_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/login_code_del_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="18dp"
+                android:drawableRight="@drawable/public_appraise_deleted"
+                android:visibility="gone" />
+            <!-- android:drawableLeft="@drawable/homepage_search_icon" -->
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/home_homepage_search_btn"
+            android:layout_width="48dip"
+            android:layout_height="32dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/common_title_btn_bg_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/common_top_btn_text_color_selector"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_homepage_top_layout" >
+
+        <RelativeLayout
+            android:id="@+id/touch_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dip" >
+
+            <RelativeLayout
+                android:id="@+id/prompt_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/search_tips_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/prompt_text"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/clickwise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prompt_relative"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/clickwise"
+                android:contentDescription="@string/glide_direction" />
+
+            <RelativeLayout
+                android:id="@+id/amo_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clickwise"
+                android:layout_marginTop="15dip" >
+
+                <com.gome.ecmall.hotsearch.WheelView
+                    android:id="@+id/myView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:minHeight="155dip" >
+                </com.gome.ecmall.hotsearch.WheelView>
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/small_first_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:maxHeight="33dip"
+                    android:maxWidth="50dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="-15" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/big_first_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dip"
+                    android:layout_marginTop="18dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="0" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/small_second_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="103dip"
+                    android:layout_marginTop="40dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="40dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="15" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/big_second_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dip"
+                    android:layout_marginTop="85dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="10" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/small_thrid_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="145dip"
+                    android:layout_marginTop="50dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="35dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="-10" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/big_thrid_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dip"
+                    android:layout_marginTop="105dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="0" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/small_four_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="185dip"
+                    android:layout_marginTop="40dip"
+                    android:gravity="center"
+                    android:maxHeight="50dip"
+                    android:maxWidth="50dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="30" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/big_four_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="205dip"
+                    android:layout_marginTop="90dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="0" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/small_five_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="196dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:maxHeight="40dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="10" />
+
+                <com.gome.ecmall.hotsearch.RotateTextView
+                    android:id="@+id/big_five_rotatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="260dip"
+                    android:layout_marginTop="18dip"
+                    android:gravity="center"
+                    android:maxHeight="35dip"
+                    android:maxWidth="45dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    easymobi:rotate="0" />
+            </RelativeLayout>
+
+            <com.gome.ecmall.hotsearch.OvalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clickwise"
+                android:layout_marginTop="-15dip"
+                android:minHeight="65dip" >
+            </com.gome.ecmall.hotsearch.OvalTextView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/home_homepage_top_layout"
+        layout="@layout/home_search_tips_layout" />
+
+</RelativeLayout>

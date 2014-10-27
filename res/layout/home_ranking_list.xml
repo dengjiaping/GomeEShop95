@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <include
+        android:id="@id/ranking_list_title"
+        layout="@layout/common_ranking_list_title" />
+
+    <ListView
+        android:id="@+id/ranking_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/encode_view"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#DCDCDC"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dip"
+        android:textColor="@color/weak_text_color"
+        android:textSize="18sp"
+        android:visibility="gone" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/no_net_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/common_load_fail"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dip"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="70dp"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/product_filter_dialog_title_bg" >
+
+        <Button
+            android:id="@+id/filter_dialog_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/category_filter_dialog_btn_bg_selector"
+            android:gravity="center"
+            android:paddingBottom="8dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="8dip"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/suite_buy_filter_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/filter_dialog_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/category_filter_dialog_btn_bg_selector"
+            android:gravity="center"
+            android:paddingBottom="8dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="8dip"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/suite_buy_filter_list"
+        style="@style/common_scrollbar_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_filter_dialog_bg_shape"
+        android:cacheColorHint="@android:color/transparent"
+        android:childIndicator="@android:color/transparent"
+        android:dividerHeight="0.5dip"
+        android:groupIndicator="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

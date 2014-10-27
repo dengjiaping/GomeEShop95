@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/banner_bg" />
+
+        <com.gome.ecmall.custom.PageIndicator
+            android:id="@+id/home_page_indictor"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@id/home_viewpager"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/home_rushbuy_commend"
+        layout="@layout/home_rushbuy_commend" />
+    <!-- android:layout_height="@dimen/homepage_entries_height" -->
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_green_textcolor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp" >
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_limit_buy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_big_block_bg_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_home_limit_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_limit_buy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/limit_buy"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#DF984B" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_group_buy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_big_block_bg_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_group_buy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/favourable_groupbuy"
+                    android:textColor="#429850" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_hot_proms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_big_block_bg_selector"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_hot_proms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot_promition"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#D95F2A" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="4dp" >
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_activitys"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_left_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_activitys" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/promtion_activities"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_phone_recharge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_middle_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_phone_recharge" />
+
+                <TextView
+                      android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_recharge"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_order_query"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                  android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_middle_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_order_query" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_query"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_my_fav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_right_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_my_fav" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_collection"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="4dp" >
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_history"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                 android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_left_below_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_history" />
+
+                <TextView
+                     android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_history"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_gome_shop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_middle_below_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_gome_shop" />
+
+                <TextView
+                     android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gome_stores"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_announcement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_middle_below_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_announcement" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/announcement"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+
+            <com.gome.ecmall.custom.ClickNotTransferLinearlayout
+                android:id="@+id/ll_home_settings_about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/home_little_block_right_below_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_setting" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_about"
+                    android:textColor="#5C5C5C" />
+            </com.gome.ecmall.custom.ClickNotTransferLinearlayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

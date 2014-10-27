@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+        <com.gome.ecmall.custom.PullToRefreshListView
+            android:id="@+id/hotprom_thetem_list"
+            style="@style/common_listview_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none" >
+        </com.gome.ecmall.custom.PullToRefreshListView>
+    </LinearLayout>
+
+    <include layout="@layout/common_title_layout" />
+
+    <TextView
+        android:id="@+id/noresulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_default_black_text_color"
+        android:visibility="gone" />
+
+</FrameLayout>

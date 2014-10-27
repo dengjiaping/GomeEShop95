@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ranking_list_title"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@drawable/segments_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <TextView
+        android:id="@+id/hot_sell"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_left_bg_selector"
+        android:text="@string/hot_sell" />
+
+    <TextView
+        android:id="@+id/lower_price"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_middle_bg_selector"
+        android:text="@string/lower_price"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hot_spot"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_right_bg_selector"
+        android:text="@string/hot_spot" />
+
+</LinearLayout>

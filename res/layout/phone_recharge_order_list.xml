@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/mygome_myorder_type_order_segments_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/segments_bg"
+        android:gravity="center" >
+
+        <com.gome.ecmall.custom.SegmentTabs
+            android:id="@+id/mygome_myorder_type_order_segments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            Segments="@array/type_phone_order_segments" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mygome_myorder_order_list"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:dividerHeight="12dip"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="18sp"
+        android:visibility="gone" >
+    </TextView>
+
+</LinearLayout>

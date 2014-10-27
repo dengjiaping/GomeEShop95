@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="20dip"
+        android:text="@string/barcode_inputstream_barcode"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/barcode_input_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/more_item_single_normal"
+        android:inputType="number"
+        android:minHeight="35dip"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

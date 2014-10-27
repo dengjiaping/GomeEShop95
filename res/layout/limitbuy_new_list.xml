@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/common_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="@drawable/common_top_bg" >
+
+        <Button
+            android:id="@+id/common_title_btn_back"
+            style="@style/common_top_btn_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/common_top_title_btn_bg_selector"
+            android:minWidth="48dip" />
+
+        <TextView
+            android:id="@+id/common_title_tv_text"
+            style="@style/common_top_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/common_title_btn_right"
+            android:layout_toRightOf="@+id/common_title_btn_back"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/common_title_btn_right"
+            style="@style/common_top_right_btn_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_topbar_switch_mini_false"
+            android:minWidth="48dip"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.gome.ecmall.custom.MyListView
+        android:id="@+id/limity_buy_new_list"
+        style="@style/common_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dip"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dip"
+        android:textColor="@color/weak_text_color"
+        android:textSize="18sp"
+        android:visibility="gone" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/empty_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/no_net_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_load_fail"/>
+    </LinearLayout>
+
+</LinearLayout>

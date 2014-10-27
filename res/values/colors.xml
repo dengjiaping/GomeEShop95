@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_hint_color">#DCDCDC</color>
+    <color name="main_button_bg_color">#373737</color>
+    <color name="main_default_black_text_color">#333333</color>
+    <color name="main_default_grey_text_color">#D5D5D5</color>
+    <color name="main_default_white_text_color">#FFFFFF</color>
+    <color name="price_text_color">#CC0000</color>
+    <color name="link_text_color">#0066CC</color>
+    <color name="weak_text_color">#666666</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="default_pressed_cover">#7E000000</color>
+    <color name="product_sku_check_color">#FF9700</color>
+    <color name="product_sku_disable_color">#CCCCCC</color>
+    <color name="shallow_red">#FFE9DB</color>
+    <color name="common_orange_textcolor">#FF6928</color>
+    <color name="common_green_textcolor">#64B134</color>
+    <color name="common_brwon_textcolor">#9B440A</color>
+    <color name="order_little_total_background">#F2F2F2</color>
+    <color name="push_message_textView_color">#000000</color>
+    <color name="common_round_line_color">#ababab</color>
+    <!-- 二维码 -->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <!-- 密码键盘 -->
+    <color name="bangclepay_keyboard_blue">#ff516270</color>
+    <color name="bangclepay_keyboard_white">#ffffffff</color>
+    <color name="bangclepay_keyboard_title_blue">#ff324f85</color>
+
+	<!--旋转进度条-->
+	<color name="rotate_progressbar_color">#00ffffff</color>
+	<color name="order_banner_color">#F6F6F6</color>
+	<color name="order_all_show_hide_color">#000000</color>
+	<color name="order_product_price_color">#d2b26e</color>
+	<color name="mygome_coupon_time_color">#00fbf0b9</color>
+	
+	<!-- 分享页面字体及背景颜色 -->
+	<color name="share_name_text_color">#dcdcdc</color>
+	<color name="share_spilt_line_color">#bc536d</color>
+	<color name="share_line_color">#838383</color>
+	<!-- 新版抢购颜色条 -->
+	<color name="limit_buy_not_start_color">#33a820</color>
+	<color name="limit_buy_start_color">#ff3c00</color>
+	<color name="limit_buy_end_color">#BDBDBD</color>
+	<!-- 新版团购分类列表选中状态颜色 -->
+	<color name="new_groupbuy_category_press_color">#DDDDDD</color>
+	<color name="new_groupbuy_category_background_color">#F8F8F8</color>
+	<color name="new_groupbuy_change_city_background_color">#989BA0</color>
+	<color name="new_groupbuy_city_item_pressed_color">#036CEB</color>
+	<!-- 手机充值订单详情 -->
+	<color name="phone_recharge_order_state_OK">#FF0000</color>
+	<color name="phone_recharge_order_spilt_line">#fecb98</color>
+	
+	<color name="shopping_cart_xiaoji">#f2f2f2</color>
+	<color name="shopping_cart_xiaoji_bar">#ABABAB</color>
+	
+	<color name="login_forget_password">#0072d2</color>
+	
+	<color name="category_text_click">#cf4e00</color>
+	
+	<!-- 新版热门促销 -->
+	<color name="hot_prom_black">#170e0f</color>
+	<color name="hot_prom_black_dark">#333333</color>
+	<color name="hot_prom_orange">#ff8605</color>
+	<color name="weak_promtion_activity">#d3d3d3</color>
+	<color name="product_list_base_line">#BDBDBD</color>
+	<color name="product_list_base_line2">#e1e1e1</color>
+	<color name="product_show_book_line">#c8c8c8</color>
+	<!-- 咨询回复背景色 -->
+	<color name="advisory_reply_bg">#D8D8D8</color>
+</resources>

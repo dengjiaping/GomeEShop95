@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/more_item_first_pressed" >
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="商品评价商品评价商品评价商品评价商品评价商品评价商品评"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detail_entity_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_item_last_bg_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_store_address"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_left_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/groupbuy_location" />
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_right_arrow_normal" />
+
+            <TextView
+                android:id="@+id/tv_store_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_groupbuy_detail_left_location"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_groupbuy_detail_right_arrow"
+                android:layout_toRightOf="@id/iv_groupbuy_detail_left_location"
+                android:text="好评度：好评度：好评度：好评度：好评度：好评度：好评度：好评度：好评度："
+                android:textColor="@color/hint_text_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/up_bottom_no_transparent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_store_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_left_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/groupbuy_phone" />
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_wifi_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_right_arrow_normal" />
+
+            <TextView
+                android:id="@+id/tv_store_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/iv_groupbuy_detail_left_phone"
+                android:text="010-123456"
+                android:textColor="#79B0E6" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

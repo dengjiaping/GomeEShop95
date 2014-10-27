@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"  
+        android:background="@drawable/more_item_single_normal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp" 
+            android:paddingBottom="10dp" 
+            android:paddingLeft="0dp" 
+            android:paddingRight="0dp" 
+            >
+
+            <TextView
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_help_1" />
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:text="@string/phone_recharge_help_11"/>
+            <TextView
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_help_2" />
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:text="@string/phone_recharge_help_22"/>
+            <TextView
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_help_3" />
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:text="@string/phone_recharge_help_33"/>
+            <TextView
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_help_4" />
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:text="@string/phone_recharge_help_44"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

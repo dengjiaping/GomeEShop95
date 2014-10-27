@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <!-- android:layout_gravity="bottom" -->
+
+    <TextView
+        android:id="@+id/suite_notice_imageView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/suite_notice"
+        android:gravity="center"
+        android:text="@string/look_more_suite_goods" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bangclepay_keyboard_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/shopping_goods_use_coupon_intr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/shopping_goods_red_ticket_hint"
+        android:textColor="#FFBB5C"
+        android:textSize="12dip" />
+
+    <ListView
+        android:id="@+id/shopping_cart_section_redtickets"
+        style="@style/more_section_listview_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:dividerHeight="0dip"
+        android:footerDividersEnabled="false" />
+
+</LinearLayout>

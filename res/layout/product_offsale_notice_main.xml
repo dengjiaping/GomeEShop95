@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/common_title_layout" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="12dip" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="8dip" -->
+    <!-- android:layout_marginRight="8dip" -->
+    <!-- android:text="邮件地址" -->
+    <!-- android:textColor="@color/main_default_black_text_color" -->
+    <!-- android:textSize="18sp" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/product_offsale_notice_phone_email" -->
+    <!-- android:layout_width="0dip" -->
+    <!-- android:layout_height="36dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/more_item_single_normal" -->
+    <!-- android:gravity="left|center_vertical" -->
+    <!-- android:inputType="textEmailAddress" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="北京市海淀区中关村大街" -->
+    <!-- android:textColor="@color/main_default_black_text_color" -->
+    <!-- android:textSize="16sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="20dip" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="8dip" -->
+    <!-- android:layout_marginRight="8dip" -->
+    <!-- android:text="手机号码" -->
+    <!-- android:textColor="@color/main_default_black_text_color" -->
+    <!-- android:textSize="18sp" /> -->
+
+
+    <!-- <EditText -->
+    <!-- android:id="@+id/product_offsale_notice_phone_num" -->
+    <!-- android:layout_width="0dip" -->
+    <!-- android:layout_height="36dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/more_item_single_normal" -->
+    <!-- android:gravity="left|center_vertical" -->
+    <!-- android:inputType="phone" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="北京市海淀区中关村大街" -->
+    <!-- android:textColor="@color/main_default_black_text_color" -->
+    <!-- android:textSize="16sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="40dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="请留下您的联系方式,（邮箱必填），" -->
+    <!-- android:textColor="@color/weak_text_color" -->
+    <!-- android:textSize="16sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="10dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="一但该商品降价，我们将会第一时间通知您。" -->
+    <!-- android:textColor="@color/weak_text_color" -->
+    <!-- android:textSize="16sp" /> -->
+
+</LinearLayout>

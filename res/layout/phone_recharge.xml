@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ump_input_edti_bg"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_phone_recharge_phone_num"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:digits="1234567890"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/please_write_11_num"
+                        android:imeOptions="actionSearch"
+                        android:inputType="number"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="6dip"
+                        android:paddingRight="2dip"
+                        android:paddingTop="2dip"
+                        android:singleLine="true"
+                        android:maxLength="11"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_phone_recharge_phone_num_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:drawableRight="@drawable/public_appraise_deleted"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_phone_recharge_prompt"
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/move_link_telecom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money10"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/phone_recharge_10_yuan" />
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money20"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/phone_recharge_20_yuan" />
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money30"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/phone_recharge_30_yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money50"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="12dp"
+                    android:text="@string/phone_recharge_50_yuan" />
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money100"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/phone_recharge_100_yuan" />
+
+                <Button
+                    android:id="@+id/bt_phone_recharge_money200"
+                    style="@style/phone_recharge_money_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/phone_recharge_money_selector"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/phone_recharge_200_yuan" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_phone_recharge_gome_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/phone_recharge_text_grey_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_recharge_gome_price" />
+
+                <TextView
+                    android:id="@+id/tv_phone_recharge_gome_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/price_text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone_recharge_num_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:layout_marginLeft="7dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/phone_recharge_text_grey_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_recharge_num_location" />
+
+                <TextView
+                    android:id="@+id/tv_phone_recharge_num_location"
+                    style="@style/phone_recharge_text_grey_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_phone_recharge_submit"
+                style="@style/phone_recharge_btn_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/common_orange_btn"
+                android:text="@string/right_now_recharge" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl__phone_recharge_history_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="55dp"
+            android:background="#90516270"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll__phone_recharge_history_num_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

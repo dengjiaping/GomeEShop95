@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/mygome_mycoupon_select_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                android:background="@drawable/segments_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <TextView
+                    android:id="@+id/quick_register_tab"
+                    style="@style/product_list_group_item_style"
+                    android:layout_width="0dip"
+                    android:layout_height="32dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/segments_tabs_left_bg_selector"
+                    android:text="@string/login_new_register" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/normal_register_tab"
+                    style="@style/product_list_group_item_style"
+                    android:layout_width="0dip"
+                    android:layout_height="32dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/segments_tabs_right_bg_selector"
+                    android:text="@string/login_quick_register" >
+                </TextView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/quick_register_ral_layout"
+                >
+
+                <LinearLayout
+                    android:id="@+id/quick_register_table_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/tableRow2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/more_item_single_normal"
+                        android:gravity="center_vertical"
+                        android:minHeight="45dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/login_mobel"
+                            android:textColor="@color/main_default_black_text_color"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dip"
+                            android:background="#00000000"
+                            android:ellipsize="end"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:hint="@string/login_register_phonenum"
+                            android:singleLine="true"
+                            android:textColor="@color/main_default_black_text_color"
+                            android:textColorHint="@color/text_hint_color"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/next_button"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/common_orange_btn"
+                        android:text="@string/get_quick_password"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/regedit_password_warn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:text="@string/regedit_password_warn"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="45dp" >
+
+                        <CheckBox
+                            android:id="@+id/register_agree_check"
+                            style="@style/checkbox_custom_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/login_check_agree"
+                            android:textColor="@color/main_default_black_text_color"
+                            android:textSize="16sp" >
+                        </CheckBox>
+
+                        <TextView
+                            android:id="@+id/login_agree_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/login_agree"
+                            android:textColor="#0066cc"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quick_register_table_layout_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dip" >
+
+                        <LinearLayout
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/more_item_single_normal"
+                            android:layout_toLeftOf="@+id/get_button"
+                            android:gravity="center_vertical"
+                            android:minHeight="45dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="@string/msg_password"
+                                android:textColor="@color/main_default_black_text_color"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/check_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dip"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/regedit_password_msg"
+                                android:singleLine="true"
+                                android:textColor="@color/main_default_black_text_color"
+                                android:textColorHint="@color/text_hint_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/get_button"
+                            android:layout_width="70dip"
+                            android:layout_height="43dp"
+                            android:layout_marginRight="4dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/common_orange_btn"
+                            android:text="@string/get_phone_check_code"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/quick_register_button"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/common_orange_btn"
+                        android:text="@string/login_register"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:text="@string/regedit_password_msg_warn"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/register_table_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_first_normal"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_user_name"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/register_user_name"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/login_register_user_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_middle_normal"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_password"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <com.bangcle.safekeyboard.PasswordEditText
+                        android:id="@+id/login_register_password"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:editable="false"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/login_register_password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_last_normal"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_confirm_password"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <com.bangcle.safekeyboard.PasswordEditText
+                        android:id="@+id/login_confirm_password"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:editable="false"
+                        android:hint="@string/login_default_password_again"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_last_normal"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/login_mobel"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/register_user_mobel"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/login_register_phonenum"
+                        android:inputType="phone"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <Button
+                    android:id="@+id/normal_register_button"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/common_orange_btn"
+                    android:text="@string/login_register"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:id="@+id/register_agree_check_normal"
+                        style="@style/checkbox_custom_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/login_check_agree"
+                        android:textColor="@color/main_default_black_text_color"
+                        android:textSize="16sp" >
+                    </CheckBox>
+
+                    <TextView
+                        android:id="@+id/login_agree_text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/login_agree"
+                        android:textColor="#0066cc"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

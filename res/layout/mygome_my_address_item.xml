@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip"
+    android:layout_marginTop="10dip"
+    android:orientation="horizontal"
+    android:background="@drawable/more_item_single_bg_selector" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip" >
+
+        <TextView
+            android:id="@+id/mygome_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李旺"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mygome_address_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:text="北京市丰台区火星村2号"
+            android:textColor="@color/hint_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mygome_address_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100291"
+            android:textColor="@color/hint_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mygome_address_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13698745632"
+            android:textColor="@color/hint_text_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mygome_address_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/common_right_arrow_bg_selector" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:id="@+id/presell_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/common_title"
+        android:alwaysDrawnWithCache="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/presell_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/pre_phone_image_back" />
+
+            <LinearLayout
+                android:id="@+id/pre_sell_img_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/telephone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pre_sell_phone_back"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pre_sell_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pre_sell_phone"
+                android:drawablePadding="3dip"
+                android:gravity="center"
+                android:paddingTop="1dip"
+                android:text="@string/presell_phone_num"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="3dip"
+                android:gravity="center"
+                android:text="@string/server_number"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

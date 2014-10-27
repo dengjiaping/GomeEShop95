@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+ <!-- android:background="#b5555555" -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:minWidth="280dip"
+        android:orientation="vertical" >
+
+        <!-- message -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:singleLine="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/shopping_cart_paypassword_input"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <com.bangcle.safekeyboard.PasswordEditText
+                android:id="@+id/paypassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/product_sku_attr_disable"
+                android:inputType="textPassword"
+                android:minWidth="80dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageTextview"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="@string/shopping_cart_energy_pay_message"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

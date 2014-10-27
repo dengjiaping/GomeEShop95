@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_list_item_bg_selector" >
+
+    <ImageView
+        android:id="@+id/barcode_result_list_item_icon"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="5dip"
+        android:padding="1dip" />
+
+    <ImageView
+        android:id="@+id/barcode_result_list_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/common_right_arrow_bg_selector" />
+
+    <com.gome.ecmall.custom.LineTextView
+        android:id="@+id/barcode_result_list_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_toLeftOf="@id/barcode_result_list_item_arrow"
+        android:layout_toRightOf="@id/barcode_result_list_item_icon"
+        android:paddingBottom="4dip"
+        android:paddingRight="4dip"
+        android:paddingTop="4dip"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/barcode_result_list_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/barcode_result_list_item_title"
+        android:layout_below="@id/barcode_result_list_item_title"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/price_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/barcode_barcode_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/barcode_result_list_item_price"
+        android:layout_below="@id/barcode_result_list_item_price"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/hint_text_color"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

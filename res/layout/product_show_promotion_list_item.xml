@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="8dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+	<ImageView 
+	    android:id="@+id/product_show_promotion_item_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+	    android:background="@color/hint_text_color"
+	    />
+    <ImageView
+        android:id="@+id/product_show_promotion_item_icon"
+        android:layout_below="@+id/product_show_promotion_item_line"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_marginTop="13dip"
+        android:layout_marginLeft="7dip"
+        />
+
+    <com.gome.ecmall.custom.AutoScrollTextView
+        android:id="@+id/product_show_promotion_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:ellipsize="marquee"
+        android:fadingEdge="none"
+        android:layout_below="@+id/product_show_promotion_item_line"
+        android:gravity="center_vertical|left"
+        android:layout_toRightOf="@+id/product_show_promotion_item_icon"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

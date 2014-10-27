@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/more_item_single_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_num" />
+
+            <TextView
+                android:id="@+id/tv_phone_recharge_order_confirm_num"
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_num_location" />
+
+            <TextView
+                android:id="@+id/tv_phone_recharge_order_confirm_location"
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_money" />
+
+            <TextView
+                android:id="@+id/tv_phone_recharge_order_confirm_money"
+                style="@style/phone_recharge_text_black_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/phone_recharge_text_grey_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_recharge_must_pay_money" />
+
+            <TextView
+                android:id="@+id/tv_phone_recharge_order_confirm_pay_money"
+                style="@style/phone_recharge_text_red_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/phone_recharge_text_black_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/shopping_goods_pay_method_null" />
+
+    <RadioGroup
+        android:id="@+id/rg_phone_recharge_order_confirm_online_pay_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rb_phone_recharge_order_confirm_online_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/more_item_single_normal"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/radio_button_bg_selector"
+            android:drawablePadding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/shopping_goods_order_payment_onlinepay"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_phone_recharge_order_confirm"
+        style="@style/phone_recharge_btn_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_orange_btn"
+        android:text="@string/shopping_goods_order_isneedconfirm_yes_new" />
+
+</LinearLayout>

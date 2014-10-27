@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/red_ticket_bg"
+    android:paddingBottom="8dip" >
+
+    <TextView
+        android:id="@+id/mygome_mycoupon_is_expiring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:text="即将到期"
+        android:textColor="@color/price_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mygome_mycoupon_ticket_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/mygome_mycoupon_is_expiring"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="456789023456789fhsdjkfshfkjdsfg"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mygome_mycoupon_ticket_id"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/mygome_mycoupon_is_expiring"
+        android:layout_below="@id/imageView1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_marginLeft="12dp"
+            android:gravity="bottom"
+            android:text="￥"
+            android:textColor="@color/price_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_ticket_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:gravity="bottom"
+            android:textColor="@color/price_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:gravity="bottom"
+            android:text=".00"
+            android:textColor="@color/price_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mygome_mycoupon_ticket_desc"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/coupon_desc_bg"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="18dip"
+            android:paddingRight="4dip"
+            android:textColor="@color/hint_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/linearLayout1"
+        android:layout_below="@id/imageView2"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="12dip"
+        android:text="有效时间:"
+        android:textColor="@color/hint_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mygome_mycoupon_ticket_expiration_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/textView2"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

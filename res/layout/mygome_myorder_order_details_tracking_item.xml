@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_tracking_order_status_time_textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/mygome_myorder_order_details_tracking_order_status_des_textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="15dip" />
+
+    <LinearLayout
+        android:id="@+id/mygome_myorder_order_details_tracking_pack_up_linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/mygome_myorder_order_details_tracking_pack_up_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_orange_btn"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="@string/pack_up"
+            android:textColor="#ffffff"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</LinearLayout>

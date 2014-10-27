@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_bg"
+    android:paddingBottom="10dp" >
+    
+    <include
+        android:id="@id/common_top_layout"
+        layout="@layout/common_title_layout" />
+    
+    <TextView
+        android:id="@+id/tv_store_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:textColor="@color/main_default_black_text_color"
+         android:textSize="18sp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:layout_below="@id/common_top_layout"
+         android:text="中U暗忖进程桌案点中U暗忖进程桌案点中U暗忖进程桌案点"
+        />
+    <LinearLayout
+        android:id="@+id/ll_detail_entity_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/more_item_last_bg_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_store_address"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_left_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/groupbuy_location" />
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_right_arrow_normal" />
+
+            <TextView
+                android:id="@+id/tv_store_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_groupbuy_detail_left_location"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_groupbuy_detail_right_arrow"
+                android:layout_toRightOf="@id/iv_groupbuy_detail_left_location"
+                android:text="好评度：好评度：好评度：好评度：好评度：好评度：好评度：好"
+                android:textColor="@color/hint_text_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/up_bottom_no_transparent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_store_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_left_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/groupbuy_phone" />
+
+            <ImageView
+                android:id="@+id/iv_groupbuy_detail_wifi_right_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_right_arrow_normal" />
+
+            <TextView
+                android:id="@+id/tv_store_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@id/iv_groupbuy_detail_left_phone"
+                android:text="010-123456"
+                android:textColor="#79B0E6" />
+        </RelativeLayout>
+    </LinearLayout>
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_store_name"
+        android:layout_above="@id/ll_detail_entity_main"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/more_item_first_bg_selector" >
+	<com.baidu.mapapi.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    </RelativeLayout>
+</RelativeLayout>

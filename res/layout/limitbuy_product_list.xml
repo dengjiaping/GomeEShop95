@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/title_top"
+        layout="@layout/common_title_layout" />
+
+    <HorizontalScrollView
+        android:id="@+id/limitbuy_time_hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_top"
+        android:background="@drawable/limitbuy_bg"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/limitbuy_time_btn_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/limitbuy_time_hsv"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/limit_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_bg" />
+    </RelativeLayout>
+
+    <com.gome.ecmall.custom.PageIndicator
+        android:id="@+id/limit_page_indictor"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-4dip"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/no_net_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/common_load_fail"
+        android:visibility="gone" />
+
+</RelativeLayout>

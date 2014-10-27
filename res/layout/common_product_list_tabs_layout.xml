@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/result_tabs_container"
+    android:layout_width="fill_parent"
+    android:layout_height="44dip"
+    android:background="@drawable/segments_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <TextView
+        android:id="@+id/product_list_tab_item_hot"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_left_bg_selector"
+        android:drawableRight="@drawable/product_rank_down_bg_selector"
+        android:text="@string/product_hot" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_list_tab_item_sale"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_middle_bg_selector"
+        android:drawableRight="@drawable/product_rank_down_bg_selector"
+        android:text="@string/product_sale" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_list_tab_item_price"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_middle_bg_selector"
+        android:drawableRight="@drawable/product_rank_up_bg_selector"
+        android:text="@string/product_price" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/product_list_tab_item_time"
+        style="@style/product_list_group_item_style"
+        android:layout_width="0dip"
+        android:layout_height="32dip"
+        android:layout_weight="1"
+        android:background="@drawable/segments_tabs_right_bg_selector"
+        android:drawableRight="@drawable/product_rank_down_bg_selector"
+        android:text="@string/product_time" >
+    </TextView>
+
+</LinearLayout>

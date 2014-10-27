@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mygome_myfav_item_top_bg"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/mygome_myfav_product_imageView"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:padding="2.5dip"
+            android:background="@drawable/product_list_item_icon_bg" />
+
+        <com.gome.ecmall.custom.LineTextView
+            android:id="@+id/mygome_myfav_product_name_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/mygome_myfav_product_imageView"
+            android:textColor="@color/main_default_black_text_color"
+            android:textSize="15dip" />
+
+        <!-- 赠品信息 -->
+
+        <com.gome.ecmall.custom.DisScrollListView
+            android:id="@+id/mygome_myfav_prom_list"
+            style="@style/more_section_listview_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mygome_myfav_product_name_text"
+            android:layout_below="@+id/mygome_myfav_product_name_text"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="6dip" />
+
+        <TextView
+            android:id="@+id/mygome_myfav_product_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mygome_myfav_prom_list"
+            android:layout_below="@+id/mygome_myfav_prom_list"
+            android:textColor="@color/price_text_color"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/mygome_myfav_right_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/common_right_arrow_bg_selector" />
+
+        <Button
+            android:id="@+id/mygome_myfav_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/common_delete_bg_selector"
+            android:text="@string/mygome_delete"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mygome_myfav_prom_imageView1"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mygome_myfav_item_bottom_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <Button
+            android:id="@+id/mygome_myfav_add_shop_button"
+            style="@style/common_top_btn_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_orange_btn"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dip"
+            android:paddingTop="8dp"
+            android:text="@string/mygome_myfav_add_shopping_cart"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/mygome_myfav_is_onsale_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/price_text_color"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/mygome_fav_list_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/mygome_myfav_add_shop_button" />
+
+        <!--
+             <TextView
+            android:id="@+id/mygome_myfav_fav_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mygome_fav_list_textView1"
+            android:layout_alignBottom="@+id/mygome_fav_list_textView1"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/mygome_fav_list_textView1"
+            android:layout_toLeftOf="@+id/mygome_myfav_add_shop_button"
+            android:textColor="@color/hint_text_color" android:text="4444"/>
+        -->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="65dip"
+    android:layout_height="65dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/product_show_gallery_item_image"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:padding="1dip"
+        android:background="@drawable/category_product_list_grid_bg" />
+
+</LinearLayout>

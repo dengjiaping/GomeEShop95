@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_category_item_background"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+
+    <ImageView
+        android:id="@+id/categroy_left_red_line"
+        android:layout_width="5dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:background="#cc1000" />
+    <ImageView
+        android:id="@+id/categroy_bottom_grey_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bangclepay_keyboard_blue" />
+
+    <ImageView
+        android:id="@+id/categroy_bottom_white_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/categroy_bottom_grey_line"
+        android:background="@color/common_orange_textcolor" />
+    <TextView
+        android:id="@+id/tv_category_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:text="生活团购"
+        android:textColor="@color/main_default_black_text_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

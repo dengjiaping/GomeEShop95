@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="category_first_class_item_height">80dip</dimen>
+    <dimen name="homepage_entries_height">277dip</dimen>
+    <dimen name="scrollbar_width">8dip</dimen>
+    <dimen name="scrollbar_height">8dip</dimen>
+    <dimen name="size">48dip</dimen>
+    <dimen name="about_text_size">17sp</dimen>
+    <!-- 密码键盘 -->
+    <dimen name="bangclepay_keyboard_fontsize">16.0sp</dimen>
+    <dimen name="bangclepay_keyboard_padding">5.0dip</dimen>
+    <dimen name="bangclepay_keyboard_key_margin">2.0dip</dimen>
+    <dimen name="bangclepay_keyboard_num_sign_padding">5.0dip</dimen>
+    <dimen name="bangclepay_key_letter_btn_width">30.0dip</dimen>
+    <dimen name="bangclepay_key_letter_btn_width_double">70.0dip</dimen>
+    <!-- 默认字体大小 -->
+    <dimen name="default_text_size">15sp</dimen>
+    <!-- 二级标题字体大小 -->
+    <dimen name="subtitle_text_size">17sp</dimen>
+    <!-- 一级标题字体大小 -->
+    <dimen name="header_title_text_size">20sp</dimen>
+    <!-- 热门促销item高度 -->
+    <dimen name="hot_promotion_item_height">290dip</dimen>
+    <!-- 热门促销item图片高度 -->
+    <dimen name="hot_promotion_item_img_height">230dip</dimen>
+    
+    <!-- Tabs -->
+    <dimen name="tab_padding_top_bottom">8dp</dimen>
+    <dimen name="tab_padding_left_right">60dp</dimen>
+    <dimen name="tab_height">45dp</dimen>  
+
+</resources>

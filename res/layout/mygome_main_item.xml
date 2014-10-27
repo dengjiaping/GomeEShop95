@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的国美列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/mygome_main_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="#333333"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/mygome_main_notice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="#ff0000"
+        android:textSize="18dip" />
+
+    <ImageView
+        android:id="@+id/mygome_main_list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/common_right_arrow_bg_selector" />
+
+</RelativeLayout>

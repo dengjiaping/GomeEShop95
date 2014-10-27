@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="category_first_class_item_height">130dip</dimen>
+    <dimen name="homepage_entries_height">345dip</dimen>
+    <dimen name="about_text_size">18sp</dimen>
+    <!-- 默认字体大小 -->
+    <dimen name="default_text_size">16sp</dimen>
+    <!-- 二级标题字体大小 -->
+    <dimen name="subtitle_text_size">18sp</dimen>
+    <!-- 一级标题字体大小 -->
+    <dimen name="header_title_text_size">20sp</dimen>
+
+    <!-- 热门促销item高度 -->
+    <dimen name="hot_promotion_item_height">450dip</dimen>
+    <!-- 热门促销item图片高度 -->
+    <dimen name="hot_promotion_item_img_height">280dp</dimen>
+
+    <!-- 订单tabs -->
+    <dimen name="tab_padding_left_right">60dp</dimen>
+    <dimen name="coupon_cost_marginRight">25dp</dimen>
+
+</resources>

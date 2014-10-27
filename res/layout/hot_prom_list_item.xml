@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/group_limit_hot_item_bg" >
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="wrap_content"
+        android:layout_height="140dip"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dip"
+        android:src="@drawable/product_list_grid_item_icon_bg" />
+
+    <ImageView
+        android:id="@+id/hot_prom_tag_image"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/product_blue_coupon" />
+
+    <LinearLayout
+        android:id="@+id/lint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@+id/product_image"
+        android:background="#d8d8d8"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lint_layout"
+        android:background="#f3f3f3" >
+
+        <com.gome.ecmall.custom.LineTextRankView
+            android:id="@+id/product_describe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:minHeight="40dp"
+            android:textColor="@color/hot_prom_black_dark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_describe"
+            android:layout_marginLeft="1dip"
+            android:background="@drawable/common_dot_line_style_one" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_line"
+            android:gravity="center_vertical"
+            android:minHeight="45dip"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/price_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/price"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/order_amount"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/price_mark"
+                    android:singleLine="true"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/price"
+                    android:layout_toRightOf="@+id/price"
+                    android:singleLine="true"
+                    android:textColor="@color/price_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/hot_prom_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:singleLine="true"
+                    android:text="@string/hot_prom_save"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hot_prom_save_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dip"
+                    android:singleLine="true"
+                    android:textColor="@color/weak_text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
